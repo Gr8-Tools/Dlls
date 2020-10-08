@@ -1,0 +1,13 @@
+C:\Users\SplavOP\source\repos\TestYandexSpeachKit\TestYandexSpeechKit\bin\Debug\TestYandexSpeechKit.exe
+C:\Users\SplavOP\source\repos\TestYandexSpeachKit\TestYandexSpeechKit\bin\Debug\TestYandexSpeechKit.pdb
+C:\Users\SplavOP\source\repos\TestYandexSpeachKit\TestYandexSpeechKit\bin\Debug\SpeechKitApi.dll
+C:\Users\SplavOP\source\repos\TestYandexSpeachKit\TestYandexSpeechKit\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\SplavOP\source\repos\TestYandexSpeachKit\TestYandexSpeechKit\bin\Debug\Newtonsoft.Json.dll
+C:\Users\SplavOP\source\repos\TestYandexSpeachKit\TestYandexSpeechKit\bin\Debug\jose-jwt.dll
+C:\Users\SplavOP\source\repos\TestYandexSpeachKit\TestYandexSpeechKit\bin\Debug\SpeechKitApi.pdb
+C:\Users\SplavOP\source\repos\TestYandexSpeachKit\TestYandexSpeechKit\bin\Debug\Newtonsoft.Json.xml
+C:\Users\SplavOP\source\repos\TestYandexSpeachKit\TestYandexSpeechKit\obj\Debug\TestYandexSpeechKit.csprojAssemblyReference.cache
+C:\Users\SplavOP\source\repos\TestYandexSpeachKit\TestYandexSpeechKit\obj\Debug\TestYandexSpeechKit.csproj.CoreCompileInputs.cache
+C:\Users\SplavOP\source\repos\TestYandexSpeachKit\TestYandexSpeechKit\obj\Debug\TestYandexSpeechKit.csproj.CopyComplete
+C:\Users\SplavOP\source\repos\TestYandexSpeachKit\TestYandexSpeechKit\obj\Debug\TestYandexSpeechKit.exe
+C:\Users\SplavOP\source\repos\TestYandexSpeachKit\TestYandexSpeechKit\obj\Debug\TestYandexSpeechKit.pdb
