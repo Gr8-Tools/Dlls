@@ -30,9 +30,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/TestYandexSpeachKit/Scripts/SpeachKitApi/Models/TokenResources/OAuthToken.cs" />
-        <option value="$PROJECT_DIR$/TestYandexSpeachKit/Scripts/SpeachKitApi/Utils/Extensions.cs" />
-        <option value="$PROJECT_DIR$/TestYandexSpeachKit/Scripts/SpeachKitApi/SpeachKitClient.cs" />
         <option value="$PROJECT_DIR$/TestYandexSpeachKit/Scripts/SpeachKitApi/SpeechKitClient.cs" />
         <option value="$PROJECT_DIR$/TestYandexSpeachKit/Scripts/SpeechKitApi/Models/TokenResources/IToken.cs" />
         <option value="$PROJECT_DIR$/TestYandexSpeachKit/Scripts/SpeechKitApi/Models/TokenResources/JwtToken.cs" />
@@ -81,6 +78,9 @@
         <option value="$PROJECT_DIR$/SpeechKitApi/Wav/Utils/Params.cs" />
         <option value="$PROJECT_DIR$/TestYandexSpeechKit/Program.cs" />
         <option value="$PROJECT_DIR$/SpeechKitApi/Wav/WavConverter.cs" />
+        <option value="$PROJECT_DIR$/UnityAsyncHelper/Class1.cs" />
+        <option value="$PROJECT_DIR$/UnityAsyncHelper/Core.resx" />
+        <option value="$PROJECT_DIR$/UnityAsyncHelper/Core/ThreadManager.cs" />
       </list>
     </option>
   </component>
@@ -152,6 +152,24 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue=".NET Project.TestYandexSpeechKit (1)" />
@@ -169,6 +187,7 @@
       <workItem from="1601966528375" duration="26558000" />
       <workItem from="1602075291897" duration="10951000" />
       <workItem from="1602126910517" duration="7747000" />
+      <workItem from="1602139130112" duration="4099000" />
     </task>
     <servers />
   </component>
@@ -273,10 +292,11 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state width="2517" height="368" key="GridCell.Tab.4.right/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1602136206869" />
-    <state x="872" y="272" key="Rider.ProjectTemplateDialog.Size" timestamp="1602136196201">
-      <screen x="0" y="0" width="2560" height="1080" />
+    <state x="3432" y="272" key="Rider.ProjectTemplateDialog.Size" timestamp="1602139196496">
+      <screen x="2560" y="0" width="2560" height="1080" />
     </state>
     <state x="872" y="272" key="Rider.ProjectTemplateDialog.Size/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1602136196201" />
+    <state x="3432" y="272" key="Rider.ProjectTemplateDialog.Size/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1602139196496" />
     <state x="1152" y="223" key="RiderGenerateDialog" timestamp="1601977133284">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>

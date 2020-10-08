@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpeechKitApi", "SpeechKitAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestYandexSpeechKit", "TestYandexSpeechKit\TestYandexSpeechKit.csproj", "{5836A7E5-AA4A-4A5F-9B9E-2B619E5DECD3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityAsyncHelper", "UnityAsyncHelper\UnityAsyncHelper.csproj", "{A010634D-2BA2-4830-877C-0F811E7CCF88}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{5836A7E5-AA4A-4A5F-9B9E-2B619E5DECD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5836A7E5-AA4A-4A5F-9B9E-2B619E5DECD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5836A7E5-AA4A-4A5F-9B9E-2B619E5DECD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A010634D-2BA2-4830-877C-0F811E7CCF88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A010634D-2BA2-4830-877C-0F811E7CCF88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A010634D-2BA2-4830-877C-0F811E7CCF88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A010634D-2BA2-4830-877C-0F811E7CCF88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
