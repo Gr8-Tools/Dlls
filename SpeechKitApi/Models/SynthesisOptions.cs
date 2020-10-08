@@ -42,7 +42,7 @@ namespace SpeechKitApi.Models
         /// <exception cref="ArgumentNullException"></exception>
         /// <exception cref="ArgumentException"></exception>
         /// <exception cref="ArgumentOutOfRangeException"></exception>
-        public SynthesisOptions(string text, float speed = 0.75f, string folderIdentity = "")
+        public SynthesisOptions(string text, string folderIdentity = "", float speed = 0.75f)
         {
             if (text == null)
                 throw new ArgumentNullException(nameof(text));
@@ -58,9 +58,9 @@ namespace SpeechKitApi.Models
         /// <summary>
         /// Создает опции по текстовому набору и общим дополнительным опциям
         /// </summary>
-        public static IEnumerable<SynthesisOptions> Create(IEnumerable<string> texts, SynthesisExternalOptions externalOptions, float speed = 0.75f, string folderIdentity = "")
+        public static IEnumerable<SynthesisOptions> Create(IEnumerable<string> texts, SynthesisExternalOptions externalOptions, string folderIdentity = "", float speed = 0.75f)
         {
-            return texts.Select(text => new SynthesisOptions(text, speed, folderIdentity)
+            return texts.Select(text => new SynthesisOptions(text, folderIdentity, speed)
             {
                 ExteranlOptions = externalOptions
             });

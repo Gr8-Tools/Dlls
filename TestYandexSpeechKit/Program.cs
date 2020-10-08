@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Linq;
 using SpeechKitApi;
 using SpeechKitApi.Enums;
 using SpeechKitApi.Models;
@@ -11,30 +11,34 @@ namespace TestYandexSpeechKit
     {
         public static void Main(string[] args)
         {
-            Execute();
+            Execute("C:\\tmp");
         }
 
-        static void Execute()
+        static void Execute(params object[] args)
         {
+            var path = (string) args[0];
             var client = SpeechKitClient.Create(new OAuthToken {Key = ClientParams.OAuthKey});
-            
-            var options = new SynthesisOptions("Привет!", 0.75f, ClientParams.YandexCloudFolderId)
+
+            var externalOptions = new SynthesisExternalOptions
             {
-                ExteranlOptions =
-                {
-                    Emotion = Emotion.Good,
-                    Language = SynthesisLanguage.Russian,
-                    Quality = SynthesisQuality.High,
-                    Speaker = Speaker.Oksana,
-                    AudioFormat = SynthesisAudioFormat.Lpcm
-                }
+                Emotion = Emotion.Evil,
+                Language = SynthesisLanguage.Russian,
+                Quality = SynthesisQuality.High,
+                Speaker = Speaker.Oksana,
+                AudioFormat = SynthesisAudioFormat.Lpcm
             };
-            //client.SaveSpeech(options, $"C:\\tmp").GetAwaiter().GetResult();
-            var data = client.GetSpeech(options).GetAwaiter().GetResult();
-            WavConverter.Convert(in data, in options, "C:\\tmp");
+
+            var optionsArray = SynthesisOptions.Create(
+                new string[] {"Соси жопу", "А можешь и не жопу"},
+                externalOptions,
+                ClientParams.YandexCloudFolderId
+            ).ToArray();
+            
+            var dataArray = client.GetMultipleSpeech(optionsArray).GetAwaiter().GetResult();
+            for(var i = 0; i < dataArray.Length; i++)
+                WavConverter.Convert(in dataArray[i], in optionsArray[i], path);
             
             client.Dispose();
-            Console.Write("Completed!");
         } 
     }
 }

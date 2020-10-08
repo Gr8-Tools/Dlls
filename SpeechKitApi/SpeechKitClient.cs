@@ -99,18 +99,17 @@ namespace SpeechKitApi
         /// <summary>
         /// Формирует аудио-файлы по переданным опциям 
         /// </summary>
-        public async Task<byte[][]> GetMultipleSpeech(IEnumerable<SynthesisOptions> optionsEnumerable, string directoryName)
+        public async Task<byte[][]> GetMultipleSpeech(IEnumerable<SynthesisOptions> optionsEnumerable)
         {
             _httpClient.DefaultRequestHeaders.Add("Authorization", "Bearer " + _amiTokenInfo.Key);
             var optionsArray = optionsEnumerable.ToArray();
-            
-            var data = new byte[optionsArray.Length][];
-            for (var i = 0; i < optionsArray.Length; i++)
-                data[i] = await GetSpeech(optionsArray[i], false);
-            
-            _httpClient.DefaultRequestHeaders.Clear();
 
-            return data;
+            var dataList = new List<byte[]> { Capacity = optionsArray.Length };
+            foreach (var option in optionsArray)
+                dataList.Add(await GetSpeech(option, false));
+
+            _httpClient.DefaultRequestHeaders.Clear();
+            return dataList.ToArray();
         }
         
         /// <summary>
@@ -125,8 +124,6 @@ namespace SpeechKitApi
             _httpClient.DefaultRequestHeaders.Clear();
         }
 
-        
-        
         /// <summary>
         /// Возвращает JWT-токен
         /// </summary>
