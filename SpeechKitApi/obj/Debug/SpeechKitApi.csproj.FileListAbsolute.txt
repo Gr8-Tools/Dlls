@@ -1,0 +1,11 @@
+C:\Users\SplavOP\source\repos\TestYandexSpeachKit\SpeechKitApi\bin\Debug\SpeechKitApi.dll
+C:\Users\SplavOP\source\repos\TestYandexSpeachKit\SpeechKitApi\bin\Debug\SpeechKitApi.pdb
+C:\Users\SplavOP\source\repos\TestYandexSpeachKit\SpeechKitApi\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\SplavOP\source\repos\TestYandexSpeachKit\SpeechKitApi\bin\Debug\jose-jwt.dll
+C:\Users\SplavOP\source\repos\TestYandexSpeachKit\SpeechKitApi\bin\Debug\Newtonsoft.Json.dll
+C:\Users\SplavOP\source\repos\TestYandexSpeachKit\SpeechKitApi\bin\Debug\Newtonsoft.Json.xml
+C:\Users\SplavOP\source\repos\TestYandexSpeachKit\SpeechKitApi\obj\Debug\SpeechKitApi.csprojAssemblyReference.cache
+C:\Users\SplavOP\source\repos\TestYandexSpeachKit\SpeechKitApi\obj\Debug\SpeechKitApi.csproj.CoreCompileInputs.cache
+C:\Users\SplavOP\source\repos\TestYandexSpeachKit\SpeechKitApi\obj\Debug\SpeechKitApi.csproj.CopyComplete
+C:\Users\SplavOP\source\repos\TestYandexSpeachKit\SpeechKitApi\obj\Debug\SpeechKitApi.dll
+C:\Users\SplavOP\source\repos\TestYandexSpeachKit\SpeechKitApi\obj\Debug\SpeechKitApi.pdb
