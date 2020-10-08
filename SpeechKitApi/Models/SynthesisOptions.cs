@@ -2,7 +2,8 @@
 // PVS-Studio Static Code Analyzer for C, C++ and C#: http://www.viva64.com
 
 using System;
-using SpeechKitApi.Enums;
+using System.Collections.Generic;
+using System.Linq;
 using SpeechKitApi.Utils;
 
 namespace SpeechKitApi.Models
@@ -18,39 +19,19 @@ namespace SpeechKitApi.Models
         public string Text { get; }
 
         /// <summary>
-        /// File extension (format) of the synthesized file.
-        /// </summary>
-        public SynthesisAudioFormat AudioFormat { get; set; } = SynthesisAudioFormat.Lpcm;
-
-        /// <summary>
-        /// Sampling rate and bit rate of the synthesized PCM audio. Note that the quality parameter only affects the audio characteristics for Wav.
-        /// </summary>
-        public SynthesisQuality Quality { get; set; } = SynthesisQuality.High;
-
-        /// <summary>
-        /// Language
-        /// </summary>
-        public SynthesisLanguage Language { get; set; } = SynthesisLanguage.Russian;
-
-        /// <summary>
-        /// The voice for the synthesized speech.
-        /// </summary>
-        public Speaker Speaker { get; set; } = Speaker.Zahar;
-
-        /// <summary>
         /// The speed (tempo) of the synthesized speech. 
         /// </summary>
         public float Speed { get; }
-
-        /// <summary>
-        /// The emotional connotation of the voice.
-        /// </summary>
-        public Emotion Emotion { get; set; } = Emotion.Neutral;
         
         /// <summary>
         /// Accessible folder identity
         /// </summary>
         public string FolderId { get; }
+        
+        /// <summary>
+        /// Exteranl synthesis options
+        /// </summary>
+        public SynthesisExternalOptions ExteranlOptions { get; set; }
 
         /// <summary>
         /// Create new speech synthesis options.
@@ -61,7 +42,7 @@ namespace SpeechKitApi.Models
         /// <exception cref="ArgumentNullException"></exception>
         /// <exception cref="ArgumentException"></exception>
         /// <exception cref="ArgumentOutOfRangeException"></exception>
-        public SynthesisOptions(string text, float speed = 1f, string folderIdentity = "")
+        public SynthesisOptions(string text, float speed = 0.75f, string folderIdentity = "")
         {
             if (text == null)
                 throw new ArgumentNullException(nameof(text));
@@ -72,6 +53,17 @@ namespace SpeechKitApi.Models
             Text = text;
             
             Speed = speed.Clamp(0.1f, 3f);;
+        }
+
+        /// <summary>
+        /// Создает опции по текстовому набору и общим дополнительным опциям
+        /// </summary>
+        public static IEnumerable<SynthesisOptions> Create(IEnumerable<string> texts, SynthesisExternalOptions externalOptions, float speed = 0.75f, string folderIdentity = "")
+        {
+            return texts.Select(text => new SynthesisOptions(text, speed, folderIdentity)
+            {
+                ExteranlOptions = externalOptions
+            });
         }
     }
 }

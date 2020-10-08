@@ -90,7 +90,7 @@ namespace SpeechKitApi
             var responseBytes = await GetSpeech(options, setHeader);
              
             var fileName = $"{directoryName}\\{options.Text.GetValidPathString()}";
-            if (options.AudioFormat == SynthesisAudioFormat.Opus)
+            if (options.ExteranlOptions.AudioFormat == SynthesisAudioFormat.Opus)
                 fileName += ".ogg";
             
             File.WriteAllBytes(fileName, responseBytes);

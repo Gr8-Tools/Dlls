@@ -19,6 +19,7 @@
           <e p="SynthesisQuality.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
+          <e p="SynthesisExternalOptions.cs" t="Include" />
           <e p="SynthesisOptions.cs" t="Include" />
           <e p="TokenResources" t="Include">
             <e p="AmiTokenInfo.cs" t="Include" />

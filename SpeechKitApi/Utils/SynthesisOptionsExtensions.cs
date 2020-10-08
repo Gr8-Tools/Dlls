@@ -12,16 +12,16 @@ namespace SpeechKitApi.Utils
             var queryParams = new Dictionary<string, string>
             {
                 ["text"] = options.Text,
-                ["lang"] = options.Language.GetEnumString() ?? "",
-                ["voice"] = options.Speaker.GetEnumString() ?? "",
-                ["emotion"] = options.Emotion.GetEnumString() ?? "",
+                ["lang"] = options.ExteranlOptions.Language.GetEnumString() ?? "",
+                ["voice"] = options.ExteranlOptions.Speaker.GetEnumString() ?? "",
+                ["emotion"] = options.ExteranlOptions.Emotion.GetEnumString() ?? "",
                 ["speed"] = options.Speed.ToString("F1").Replace(',', '.'),
-                ["format"] = options.AudioFormat.GetEnumString() ?? "",
-                ["sampleRateHertz"] = options.Quality.GetEnumString() ?? "",
+                ["format"] = options.ExteranlOptions.AudioFormat.GetEnumString() ?? "",
+                ["sampleRateHertz"] = options.ExteranlOptions.Quality.GetEnumString() ?? "",
                 ["folderId"] = options.FolderId
             };
 
-            if (options.AudioFormat == SynthesisAudioFormat.Opus)
+            if (options.ExteranlOptions.AudioFormat == SynthesisAudioFormat.Opus)
                 queryParams.Remove("sampleRateHertz");
             
             var removableParams = queryParams

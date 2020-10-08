@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Dynamic;
 using System.IO;
+using System.Linq;
 using System.Text;
 using SpeechKitApi.Models;
 using SpeechKitApi.Utils;
@@ -59,15 +60,27 @@ namespace SpeechKitApi.Wav
         }
 
         /// <summary>
-        /// Сохраняет сырые данные в wav-файл 
+        /// Сохраняет сырые данные в wav-файл
+        /// <param name="filePath">Поддерживает как полное имя файла (заканчивается на [.wav]), так и путь к расположению файла (синтезирует самостоятельно из теста)</param>>
         /// </summary>
         public static void Convert(in byte[] rawData, in SynthesisOptions options, string filePath)
         {
-            var wavData = Convert(in rawData, in options);
+            if (!filePath.EndsWith(".wav"))
+            {
+                var fileName = $"{options.Text.GetValidPathString()}.wav";
+                filePath = Path.Combine(filePath, fileName);
+            }
 
-            var fileName = $"{options.Text.GetValidPathString()}.wav";
-            filePath = Path.Combine(filePath, fileName);
-            Directory.CreateDirectory(Path.GetDirectoryName(filePath));
+            try
+            {
+                Directory.CreateDirectory(Path.GetDirectoryName(filePath));
+            }
+            catch (PathTooLongException)
+            {
+                throw new Exception("Incorrect file name!");
+            }
+            
+            var wavData = Convert(in rawData, in options);
 
             using (var fileStream = new FileStream(filePath, FileMode.Create))
             {
@@ -123,7 +136,7 @@ namespace SpeechKitApi.Wav
             const int requiredSize = 4;
             
             var chunkSize = stream.Length - (chunkSizeOffset * 2);
-            var sampleRate = int.Parse(options.Quality.GetEnumString()) / Params.LPCM_DEFAULT_CHANNELS;
+            var sampleRate = int.Parse(options.ExteranlOptions.Quality.GetEnumString()) / Params.LPCM_DEFAULT_CHANNELS;
             var byteRate = sampleRate * Params.LPCM_DEFAULT_CHANNELS * 2;
             var subChunk2 = samplesCount * Params.LPCM_DEFAULT_CHANNELS * 2;
             

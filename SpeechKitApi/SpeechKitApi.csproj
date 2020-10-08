@@ -60,6 +60,7 @@
         <Compile Include="Enums\SynthesisAudioFormat.cs" />
         <Compile Include="Enums\SynthesisLanguage.cs" />
         <Compile Include="Enums\SynthesisQuality.cs" />
+        <Compile Include="Models\SynthesisExternalOptions.cs" />
         <Compile Include="Models\SynthesisOptions.cs" />
         <Compile Include="Models\TokenResources\AmiTokenInfo.cs" />
         <Compile Include="Models\TokenResources\IToken.cs" />

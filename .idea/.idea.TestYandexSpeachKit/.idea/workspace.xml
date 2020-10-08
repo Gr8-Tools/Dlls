@@ -30,7 +30,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/TestYandexSpeachKit/Scripts/SpeachKitApi/SpeechKitClient.cs" />
         <option value="$PROJECT_DIR$/TestYandexSpeachKit/Scripts/SpeechKitApi/Models/TokenResources/IToken.cs" />
         <option value="$PROJECT_DIR$/TestYandexSpeachKit/Scripts/SpeechKitApi/Models/TokenResources/JwtToken.cs" />
         <option value="$PROJECT_DIR$/TestYandexSpeachKit/Scripts/SpeechKitApi/Models/TokenResources/OAuthToken.cs" />
@@ -61,26 +60,27 @@
         <option value="$PROJECT_DIR$/SpeechKitApi/Models/TokenResources/IToken.cs" />
         <option value="$PROJECT_DIR$/SpeechKitApi/Models/TokenResources/JwtToken.cs" />
         <option value="$PROJECT_DIR$/SpeechKitApi/Models/TokenResources/OAuthToken.cs" />
-        <option value="$PROJECT_DIR$/SpeechKitApi/Models/SynthesisOptions.cs" />
         <option value="$PROJECT_DIR$/SpeechKitApi/Utils/FloatExtensions.cs" />
         <option value="$PROJECT_DIR$/SpeechKitApi/Utils/HttpClientExtensions.cs" />
         <option value="$PROJECT_DIR$/TestYandexSpeachKit/Program.cs" />
         <option value="$PROJECT_DIR$/TestYandexSpeechKit/FileDialog.cs" />
-        <option value="$PROJECT_DIR$/SpeechKitApi/Utils/SynthesisOptionsExtensions.cs" />
         <option value="$PROJECT_DIR$/TestYandexSpeechKit/ClientParams.cs" />
         <option value="$PROJECT_DIR$/SpeechKitApi/Utils/IoExtensions.cs" />
-        <option value="$PROJECT_DIR$/SpeechKitApi/SpeechKitClient.cs" />
         <option value="$PROJECT_DIR$/SpeechKitApi/Attributes/EnumNameStringAttribute.cs" />
         <option value="$PROJECT_DIR$/SpeechKitApi/Attributes/EnumValueStringAttribute.cs" />
         <option value="$PROJECT_DIR$/SpeechKitApi/Utils/EnumValueNameHelper.cs" />
         <option value="$PROJECT_DIR$/SpeechKitApi/WavConverter.cs" />
         <option value="$PROJECT_DIR$/SpeechKitApi/Utils/Params.cs" />
         <option value="$PROJECT_DIR$/SpeechKitApi/Wav/Utils/Params.cs" />
-        <option value="$PROJECT_DIR$/TestYandexSpeechKit/Program.cs" />
-        <option value="$PROJECT_DIR$/SpeechKitApi/Wav/WavConverter.cs" />
         <option value="$PROJECT_DIR$/UnityAsyncHelper/Class1.cs" />
         <option value="$PROJECT_DIR$/UnityAsyncHelper/Core.resx" />
         <option value="$PROJECT_DIR$/UnityAsyncHelper/Core/ThreadManager.cs" />
+        <option value="$PROJECT_DIR$/SpeechKitApi/Models/SynthesisExternalOptions.cs" />
+        <option value="$PROJECT_DIR$/SpeechKitApi/Utils/SynthesisOptionsExtensions.cs" />
+        <option value="$PROJECT_DIR$/TestYandexSpeechKit/Program.cs" />
+        <option value="$PROJECT_DIR$/SpeechKitApi/SpeechKitClient.cs" />
+        <option value="$PROJECT_DIR$/SpeechKitApi/Models/SynthesisOptions.cs" />
+        <option value="$PROJECT_DIR$/SpeechKitApi/Wav/WavConverter.cs" />
       </list>
     </option>
   </component>
@@ -187,7 +187,7 @@
       <workItem from="1601966528375" duration="26558000" />
       <workItem from="1602075291897" duration="10951000" />
       <workItem from="1602126910517" duration="7747000" />
-      <workItem from="1602139130112" duration="4099000" />
+      <workItem from="1602139130112" duration="5239000" />
     </task>
     <servers />
   </component>

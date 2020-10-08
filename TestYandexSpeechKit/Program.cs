@@ -20,11 +20,14 @@ namespace TestYandexSpeechKit
             
             var options = new SynthesisOptions("Привет!", 0.75f, ClientParams.YandexCloudFolderId)
             {
-                Emotion = Emotion.Good,
-                Language = SynthesisLanguage.Russian,
-                Quality = SynthesisQuality.High,
-                Speaker = Speaker.Oksana,
-                AudioFormat = SynthesisAudioFormat.Lpcm
+                ExteranlOptions =
+                {
+                    Emotion = Emotion.Good,
+                    Language = SynthesisLanguage.Russian,
+                    Quality = SynthesisQuality.High,
+                    Speaker = Speaker.Oksana,
+                    AudioFormat = SynthesisAudioFormat.Lpcm
+                }
             };
             //client.SaveSpeech(options, $"C:\\tmp").GetAwaiter().GetResult();
             var data = client.GetSpeech(options).GetAwaiter().GetResult();
