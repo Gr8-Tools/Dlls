@@ -63,7 +63,7 @@ namespace SpeechKitApi.Wav
         /// Сохраняет сырые данные в wav-файл
         /// <param name="filePath">Поддерживает как полное имя файла (заканчивается на [.wav]), так и путь к расположению файла (синтезирует самостоятельно из теста)</param>>
         /// </summary>
-        public static void Convert(in byte[] rawData, in SynthesisOptions options, string filePath)
+        public static string Convert(in byte[] rawData, in SynthesisOptions options, string filePath)
         {
             if (!filePath.EndsWith(".wav"))
             {
@@ -86,6 +86,8 @@ namespace SpeechKitApi.Wav
             {
                 fileStream.Write(wavData, 0, wavData.Length);
             }
+
+            return filePath;
         }
 
         /// <summary>

@@ -55,7 +55,7 @@ namespace UnityAsyncHelper.Core
         /// <summary>
         /// Запускает действие в новом потоке, возвращает результат и выполняет Callback-функцию с рещультом в базовом потоке 
         /// </summary>
-        public static void AsyncExecute(ReturnAction asyncAction, [CanBeNull] Action<object[]> callback)
+        public static void AsyncExecute(Func<object[]> asyncAction, [CanBeNull] Action<object[]> callback)
         {
             void ExecuteMethod()
             {
