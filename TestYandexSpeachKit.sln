@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestYandexSpeechKit", "Test
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityAsyncHelper", "UnityAsyncHelper\UnityAsyncHelper.csproj", "{A010634D-2BA2-4830-877C-0F811E7CCF88}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeModule", "TreeModule\TreeModule.csproj", "{9463E1CA-C2D5-4CFF-9750-8CF5700D118D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{A010634D-2BA2-4830-877C-0F811E7CCF88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A010634D-2BA2-4830-877C-0F811E7CCF88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A010634D-2BA2-4830-877C-0F811E7CCF88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9463E1CA-C2D5-4CFF-9750-8CF5700D118D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9463E1CA-C2D5-4CFF-9750-8CF5700D118D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9463E1CA-C2D5-4CFF-9750-8CF5700D118D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9463E1CA-C2D5-4CFF-9750-8CF5700D118D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

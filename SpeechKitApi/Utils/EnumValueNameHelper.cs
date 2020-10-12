@@ -44,7 +44,9 @@ namespace SpeechKitApi.Utils
                 return list.Aggregate(0, (current, elem) => current | (int)elem);
             }
 
-            return dictionary.Values.All(value => value?.Name != name) ? null : dictionary.FirstOrDefault(keyValuePair => keyValuePair.Value.Name == name).Key;
+            return dictionary.Values.All(value => value?.Name != name) 
+                ? null 
+                : dictionary.FirstOrDefault(keyValuePair => keyValuePair.Value?.Name == name).Key;
         }
         public static TEnum GetEnumElementByName<TEnum>(this string name)
         {
@@ -70,7 +72,9 @@ namespace SpeechKitApi.Utils
                 return (TEnum)(object)list.Aggregate(0, (current, elem) => current | (int)(object)elem);
             }
 
-            return dictionary.Values.All(value => value?.Name != name) ? default(TEnum) : dictionary.First(keyValuePair => keyValuePair.Value.Name == name).Key;
+            return dictionary.Values.All(value => value?.Name != name) 
+                ? default(TEnum) 
+                : dictionary.First(keyValuePair => keyValuePair.Value?.Name == name).Key;
         }
 
         #endregion

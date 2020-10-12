@@ -17,6 +17,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0D18E9E4-878A-4081-A336-A61538DC57A0/ca/89ccb9b5/__Error.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/401BB0E3-FFF2-41AB-9478-75D8D72F610A/46/5d6c0eda/HttpClient.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0D18E9E4-878A-4081-A336-A61538DC57A0/a8/212ee5db/FileStream.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/50FE65A4-93A0-4952-84F1-E3562EFBE38D/d2/5baba4b1/Path.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/464CF9A0-0D73-4699-B018-F062D1BC2004/5a/22560bb8/PemReader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SpeechKitApi/Attributes/EnumNameStringAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0D18E9E4-878A-4081-A336-A61538DC57A0/dd/ec92c516/String.cs" root0="SKIP_HIGHLIGHTING" />
@@ -25,17 +26,10 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0D18E9E4-878A-4081-A336-A61538DC57A0/ee/7472a6d6/TextReader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SpeechKitApi/Utils/Params.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3E4100C5-0380-40BA-A2BA-66BB8A76E424/9c/c924ad36/FileDialog.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/Downloads/ITCC.YandexSpeechKitClient-master/src/ITCC.YandexSpeechKitClient/Models/TextToSpechResult.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/TestYandexSpeachKit/Scripts/SpeechKitApi/Models/TokenResources/IToken.cs" />
-        <option value="$PROJECT_DIR$/TestYandexSpeachKit/Scripts/SpeechKitApi/Models/TokenResources/JwtToken.cs" />
-        <option value="$PROJECT_DIR$/TestYandexSpeachKit/Scripts/SpeechKitApi/Models/TokenResources/OAuthToken.cs" />
-        <option value="$PROJECT_DIR$/TestYandexSpeachKit/Scripts/SpeechKitApi/Models/TokenResources/AmiTokenInfo.cs" />
-        <option value="$PROJECT_DIR$/TestYandexSpeachKit/Scripts/SpeechKitApi/Attributes/EnumValueStringAttribute.cs" />
-        <option value="$PROJECT_DIR$/TestYandexSpeachKit/Scripts/SpeechKitApi/Attributes/EnumNameStringAttribute.cs" />
         <option value="$PROJECT_DIR$/TestYandexSpeachKit/Scripts/SpeechKitApi/Enums/SynthesisAudioFormat.cs" />
         <option value="$PROJECT_DIR$/TestYandexSpeachKit/Scripts/SpeechKitApi/Enums/Speaker.cs" />
         <option value="$PROJECT_DIR$/TestYandexSpeachKit/Scripts/SpeechKitApi/Enums/SynthesisLanguage.cs" />
@@ -68,7 +62,6 @@
         <option value="$PROJECT_DIR$/SpeechKitApi/Utils/IoExtensions.cs" />
         <option value="$PROJECT_DIR$/SpeechKitApi/Attributes/EnumNameStringAttribute.cs" />
         <option value="$PROJECT_DIR$/SpeechKitApi/Attributes/EnumValueStringAttribute.cs" />
-        <option value="$PROJECT_DIR$/SpeechKitApi/Utils/EnumValueNameHelper.cs" />
         <option value="$PROJECT_DIR$/SpeechKitApi/WavConverter.cs" />
         <option value="$PROJECT_DIR$/SpeechKitApi/Utils/Params.cs" />
         <option value="$PROJECT_DIR$/SpeechKitApi/Wav/Utils/Params.cs" />
@@ -81,6 +74,13 @@
         <option value="$PROJECT_DIR$/TestYandexSpeechKit/Program.cs" />
         <option value="$PROJECT_DIR$/SpeechKitApi/Wav/WavConverter.cs" />
         <option value="$PROJECT_DIR$/UnityAsyncHelper/Core/ThreadManager.cs" />
+        <option value="$PROJECT_DIR$/SpeechKitApi/Utils/EnumValueNameHelper.cs" />
+        <option value="$PROJECT_DIR$/TreeModule/Class1.cs" />
+        <option value="$PROJECT_DIR$/TreeModule/Utils/TrakingDirection.cs" />
+        <option value="$PROJECT_DIR$/TreeModule/Utils/TrackingDirection.cs" />
+        <option value="$PROJECT_DIR$/TreeModule/TreeRootNode.cs" />
+        <option value="$PROJECT_DIR$/TreeModule/TreeNode.cs" />
+        <option value="$PROJECT_DIR$/TreeModule/Tree.cs" />
       </list>
     </option>
   </component>
@@ -188,6 +188,9 @@
       <workItem from="1602075291897" duration="10951000" />
       <workItem from="1602126910517" duration="7747000" />
       <workItem from="1602139130112" duration="11484000" />
+      <workItem from="1602175998634" duration="1070000" />
+      <workItem from="1602216954892" duration="1406000" />
+      <workItem from="1602477203579" duration="13746000" />
     </task>
     <servers />
   </component>
@@ -308,15 +311,16 @@
     </state>
     <state width="2517" height="368" key="GridCell.Tab.4.right/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1602146967244" />
     <state width="2517" height="368" key="GridCell.Tab.4.right/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1602165969088" />
-    <state x="3432" y="272" key="Rider.ProjectTemplateDialog.Size" timestamp="1602139196496">
+    <state x="2572" y="273" key="Rider.ProjectTemplateDialog.Size" timestamp="1602480470102">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
     <state x="872" y="272" key="Rider.ProjectTemplateDialog.Size/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1602136196201" />
-    <state x="3432" y="272" key="Rider.ProjectTemplateDialog.Size/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1602139196496" />
-    <state x="1152" y="223" key="RiderGenerateDialog" timestamp="1601977133284">
-      <screen x="0" y="0" width="2560" height="1080" />
+    <state x="2572" y="273" key="Rider.ProjectTemplateDialog.Size/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1602480470102" />
+    <state x="3712" y="223" key="RiderGenerateDialog" timestamp="1602482371930">
+      <screen x="2560" y="0" width="2560" height="1080" />
     </state>
     <state x="1152" y="223" key="RiderGenerateDialog/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1601977133284" />
+    <state x="3712" y="223" key="RiderGenerateDialog/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1602482371930" />
     <state x="781" y="185" key="SettingsEditor" timestamp="1601967756390">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
@@ -325,9 +329,10 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state width="1288" height="548" key="XDebugger.FullValuePopup/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1601992768103" />
-    <state x="943" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1601984556675">
-      <screen x="0" y="0" width="2560" height="1080" />
+    <state x="3503" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1602492178968">
+      <screen x="2560" y="0" width="2560" height="1080" />
     </state>
     <state x="943" y="235" width="672" height="678" key="search.everywhere.popup/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1601984556675" />
+    <state x="3503" y="235" width="672" height="678" key="search.everywhere.popup/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1602492178968" />
   </component>
 </project>
