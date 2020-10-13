@@ -10,25 +10,30 @@ namespace TreeModule
         public readonly LinkedList<TreeNode<T>> Children = new LinkedList<TreeNode<T>>();
         
         public int Level { get; protected set; }
+
+        public bool IsRoot => Level == 0;
+        
         public T Value;
 
         public TreeRootNode(Tree<T> container)
         {
             Container = container;
+            Level = 0;
         }
 
         public TreeRootNode(Tree<T> container, T value)
         {
             Container = container;
+            Level = 0;
             Value = value;
         }
 
         /// <summary>
         /// Добавляет новый элемент по значению 
         /// </summary>
-        public TreeNode<T> Add(T value)
+        public virtual TreeNode<T> Add(T value)
         {
-            var newNode = new TreeNode<T>(Container, this, value);
+            var newNode = new TreeNode<T>(this, value);
             Children.AddLast(newNode);
 
             return newNode;
@@ -37,9 +42,29 @@ namespace TreeModule
         /// <summary>
         /// Вставляет новый узел в элемент 
         /// </summary>
-        public void Add(TreeNode<T> newNode)
+        public TreeNode<T> Add(TreeNode<T> newNode)
         {
             Children.AddLast(newNode);
+            return newNode;
+        }
+
+        /// <summary>
+        /// Добавляет новые узлы, получаемые из значений 
+        /// </summary>
+        public virtual void AddRange(params T[] values)
+        {
+            AddRange(values
+                .Select(v => new TreeNode<T>(this, v))
+                .ToArray());
+        }
+        
+        /// <summary>
+        /// Добавляет набор узлов 
+        /// </summary>
+        public void AddRange(params TreeNode<T>[] nodes)
+        {
+            foreach (var node in nodes)
+                Children.AddLast(node);
         }
 
         /// <summary>
@@ -72,7 +97,7 @@ namespace TreeModule
         /// Вызывает переданный метод для всех дочерних объетов (deep = TRUE: опускается на уровень ниже
         /// <param name="args">[0] - deep: обход дочерних элементов</param>
         /// </summary>
-        protected void ChildrenInvoke(Action<TreeRootNode<T>, object[]> action, params object[] args)
+        public void ChildrenInvoke(Action<TreeRootNode<T>, object[]> action, params object[] args)
         {
             var deep = (bool) args[0];
             

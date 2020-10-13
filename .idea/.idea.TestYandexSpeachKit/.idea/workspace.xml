@@ -30,7 +30,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/TestYandexSpeachKit/Scripts/SpeechKitApi/Enums/SynthesisAudioFormat.cs" />
         <option value="$PROJECT_DIR$/TestYandexSpeachKit/Scripts/SpeechKitApi/Enums/Speaker.cs" />
         <option value="$PROJECT_DIR$/TestYandexSpeachKit/Scripts/SpeechKitApi/Enums/SynthesisLanguage.cs" />
         <option value="$PROJECT_DIR$/TestYandexSpeachKit/Scripts/SpeechKitApi/Enums/Emotion.cs" />
@@ -78,9 +77,10 @@
         <option value="$PROJECT_DIR$/TreeModule/Class1.cs" />
         <option value="$PROJECT_DIR$/TreeModule/Utils/TrakingDirection.cs" />
         <option value="$PROJECT_DIR$/TreeModule/Utils/TrackingDirection.cs" />
+        <option value="$PROJECT_DIR$/TreeModule/Extensions/TrackingDirectionExtensions.cs" />
+        <option value="$PROJECT_DIR$/TreeModule/Tree.cs" />
         <option value="$PROJECT_DIR$/TreeModule/TreeRootNode.cs" />
         <option value="$PROJECT_DIR$/TreeModule/TreeNode.cs" />
-        <option value="$PROJECT_DIR$/TreeModule/Tree.cs" />
       </list>
     </option>
   </component>
@@ -191,6 +191,7 @@
       <workItem from="1602175998634" duration="1070000" />
       <workItem from="1602216954892" duration="1406000" />
       <workItem from="1602477203579" duration="13746000" />
+      <workItem from="1602494080409" duration="18667000" />
     </task>
     <servers />
   </component>
