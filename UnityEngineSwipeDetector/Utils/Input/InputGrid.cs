@@ -62,9 +62,9 @@ namespace Swipe.Utils.Input
         public uint GetCellId(Vector2 position)
         {
             if (Rows == 0 || Columns == 0)
-                throw new System.Exception($"Input Grid is not filled! [{Rows};{Columns}]");
+                throw new Exception($"Input Grid is not filled! [{Rows};{Columns}]");
 
-            //Так как позиция отсчитывается от левого нижнего угла экрана, а считать привычнеее справа-налоево, сверху-вниз, то номер строки должен быть реверснутым
+            //Так как позиция отсчитывается от левого нижнего угла экрана, а считать привычнеее слева-направо / сверху-вниз, то номер строки должен быть реверснутым
             var currentRow = (Rows -1)-(uint)(position.y / (ScreeSize.height / Rows)); 
             var currentColumn = (uint)(position.x / (ScreeSize.width / Columns));
 

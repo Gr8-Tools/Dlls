@@ -30,7 +30,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/SpeechKitApi/Models/TokenResources/JwtToken.cs" />
         <option value="$PROJECT_DIR$/SpeechKitApi/Models/TokenResources/OAuthToken.cs" />
         <option value="$PROJECT_DIR$/SpeechKitApi/Utils/FloatExtensions.cs" />
         <option value="$PROJECT_DIR$/SpeechKitApi/Utils/HttpClientExtensions.cs" />
@@ -71,16 +70,17 @@
         <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Utils/DetectorSettings.cs" />
         <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Utils/Input/InputInfo.cs" />
         <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Utils/Input/InputData.cs" />
-        <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Utils/Input/InputGrid.cs" />
         <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Utils/Send/TouchInfo.cs" />
         <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Utils/Send/SwipeInfo.cs" />
         <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Utils/Special/TimeCondition.cs" />
         <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Utils/Special/Condition.cs" />
         <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Utils/Special/GridCondition.cs" />
         <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Utils/Special/LengthCondition.cs" />
-        <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Utils/Send/OptionalSwipeInfo.cs" />
         <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/SwipeController.cs" />
         <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/UnityEngineSwipeController.cs" />
+        <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Utils/Input/InputGrid.cs" />
+        <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Utils/Send/OptionalSwipeInfo.cs" />
+        <option value="$USER_HOME$/Documents/Projects/calendar/Assets/Scripts/Swipe/SwipeController.cs" />
       </list>
     </option>
   </component>
@@ -194,6 +194,7 @@
       <workItem from="1602494080409" duration="18667000" />
       <workItem from="1602611204781" duration="920000" />
       <workItem from="1602645792976" duration="2281000" />
+      <workItem from="1602677334075" duration="5296000" />
     </task>
     <servers />
   </component>
@@ -332,10 +333,10 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state width="1288" height="548" key="XDebugger.FullValuePopup/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1601992768103" />
-    <state x="3503" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1602492178968">
+    <state x="3503" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1602678277034">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
     <state x="943" y="235" width="672" height="678" key="search.everywhere.popup/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1601984556675" />
-    <state x="3503" y="235" width="672" height="678" key="search.everywhere.popup/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1602492178968" />
+    <state x="3503" y="235" width="672" height="678" key="search.everywhere.popup/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1602678277034" />
   </component>
 </project>

@@ -22,9 +22,9 @@ namespace Swipe.Extensions
                 return SwipeDirection.Left;
             }
 
-            if (angle.Between(135, 45)) return SwipeDirection.Up;
-            if (angle.Between(45, -45)) return SwipeDirection.Right;
-            if (angle.Between(-45, -135)) return SwipeDirection.Down;
+            if (angle.Between(45, 135)) return SwipeDirection.Up;
+            if (angle.Between(-45, 45)) return SwipeDirection.Right;
+            if (angle.Between(-135, -45)) return SwipeDirection.Down;
 
             return SwipeDirection.Left;
         }

@@ -33,7 +33,7 @@ namespace Swipe.Utils.Send
             var vector = (swipeInfo.FinishInfo.Position - swipeInfo.StartInfo.Position);
 
             Direction = vector.normalized;
-            Length = Direction.magnitude;
+            Length = vector.magnitude;
             DeltaTime = swipeInfo.FinishInfo.Time - swipeInfo.StartInfo.Time;
 
             SwipeDirection = Direction.GetSwipeDirection(useEightDirections);
