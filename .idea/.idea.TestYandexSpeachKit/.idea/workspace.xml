@@ -30,27 +30,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/TestYandexSpeachKit/Scripts/SpeechKitApi/Enums/Speaker.cs" />
-        <option value="$PROJECT_DIR$/TestYandexSpeachKit/Scripts/SpeechKitApi/Enums/SynthesisLanguage.cs" />
-        <option value="$PROJECT_DIR$/TestYandexSpeachKit/Scripts/SpeechKitApi/Enums/Emotion.cs" />
-        <option value="$PROJECT_DIR$/TestYandexSpeachKit/Scripts/SpeechKitApi/Utils/EnumValueNameHelper.cs" />
-        <option value="$PROJECT_DIR$/TestYandexSpeachKit/Scripts/SpeechKitApi/Enums/SynthesisQuality.cs" />
-        <option value="$PROJECT_DIR$/TestYandexSpeachKit/Scripts/SpeechKitApi/Utils/Params.cs" />
-        <option value="$PROJECT_DIR$/TestYandexSpeachKit/Scripts/SpeechKitApi/Utils/Extensions.cs" />
-        <option value="$PROJECT_DIR$/TestYandexSpeachKit/Scripts/SpeechKitApi/Utils/HttpClientExtensions.cs" />
-        <option value="$PROJECT_DIR$/TestYandexSpeachKit/Scripts/SpeechKitApi/Utils/FloatExtensions.cs" />
-        <option value="$PROJECT_DIR$/TestYandexSpeachKit/Scripts/SpeechKitApi/Models/SynthesisOptions.cs" />
-        <option value="$PROJECT_DIR$/TestYandexSpeachKit/HandMade.cs" />
-        <option value="$PROJECT_DIR$/TestYandexSpeachKit/Scripts/SpeechKitApi/SpeechKitClient.cs" />
-        <option value="$PROJECT_DIR$/SpeechKitApi/Class1.cs" />
-        <option value="$PROJECT_DIR$/SpeechKitApi/SpeechKitApi/Attributes/EnumNameStringAttribute.cs" />
-        <option value="$PROJECT_DIR$/SpeechKitApi/Enums/Emotion.cs" />
-        <option value="$PROJECT_DIR$/SpeechKitApi/Enums/Speaker.cs" />
-        <option value="$PROJECT_DIR$/SpeechKitApi/Enums/SynthesisAudioFormat.cs" />
-        <option value="$PROJECT_DIR$/SpeechKitApi/Enums/SynthesisLanguage.cs" />
-        <option value="$PROJECT_DIR$/SpeechKitApi/Enums/SynthesisQuality.cs" />
-        <option value="$PROJECT_DIR$/SpeechKitApi/Models/TokenResources/AmiTokenInfo.cs" />
-        <option value="$PROJECT_DIR$/SpeechKitApi/Models/TokenResources/IToken.cs" />
         <option value="$PROJECT_DIR$/SpeechKitApi/Models/TokenResources/JwtToken.cs" />
         <option value="$PROJECT_DIR$/SpeechKitApi/Models/TokenResources/OAuthToken.cs" />
         <option value="$PROJECT_DIR$/SpeechKitApi/Utils/FloatExtensions.cs" />
@@ -81,6 +60,27 @@
         <option value="$PROJECT_DIR$/TreeModule/Tree.cs" />
         <option value="$PROJECT_DIR$/TreeModule/TreeRootNode.cs" />
         <option value="$PROJECT_DIR$/TreeModule/TreeNode.cs" />
+        <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Class1.cs" />
+        <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Detectors/ScreenTouchSwipeDetector.cs" />
+        <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Extensions/SwipeExtensions.cs" />
+        <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Extensions/FloatExtensions.cs" />
+        <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Extensions/ResolutionExtensions.cs" />
+        <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Detectors/ISwiperDetector.cs" />
+        <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Detectors/MouseSwipeDetector.cs" />
+        <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Utils/SwipeDirection.cs" />
+        <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Utils/DetectorSettings.cs" />
+        <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Utils/Input/InputInfo.cs" />
+        <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Utils/Input/InputData.cs" />
+        <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Utils/Input/InputGrid.cs" />
+        <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Utils/Send/TouchInfo.cs" />
+        <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Utils/Send/SwipeInfo.cs" />
+        <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Utils/Special/TimeCondition.cs" />
+        <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Utils/Special/Condition.cs" />
+        <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Utils/Special/GridCondition.cs" />
+        <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Utils/Special/LengthCondition.cs" />
+        <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Utils/Send/OptionalSwipeInfo.cs" />
+        <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/SwipeController.cs" />
+        <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/UnityEngineSwipeController.cs" />
       </list>
     </option>
   </component>
@@ -192,6 +192,8 @@
       <workItem from="1602216954892" duration="1406000" />
       <workItem from="1602477203579" duration="13746000" />
       <workItem from="1602494080409" duration="18667000" />
+      <workItem from="1602611204781" duration="920000" />
+      <workItem from="1602645792976" duration="2281000" />
     </task>
     <servers />
   </component>
@@ -312,11 +314,11 @@
     </state>
     <state width="2517" height="368" key="GridCell.Tab.4.right/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1602146967244" />
     <state width="2517" height="368" key="GridCell.Tab.4.right/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1602165969088" />
-    <state x="2572" y="273" key="Rider.ProjectTemplateDialog.Size" timestamp="1602480470102">
+    <state x="2572" y="273" key="Rider.ProjectTemplateDialog.Size" timestamp="1602611232598">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
     <state x="872" y="272" key="Rider.ProjectTemplateDialog.Size/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1602136196201" />
-    <state x="2572" y="273" key="Rider.ProjectTemplateDialog.Size/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1602480470102" />
+    <state x="2572" y="273" key="Rider.ProjectTemplateDialog.Size/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1602611232598" />
     <state x="3712" y="223" key="RiderGenerateDialog" timestamp="1602482371930">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>

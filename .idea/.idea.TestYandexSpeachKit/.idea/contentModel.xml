@@ -90,6 +90,45 @@
         </e>
         <e p="UnityAsyncHelper.csproj" t="IncludeRecursive" />
       </e>
+      <e p="UnityEngineSwipeDetector" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Detectors" t="Include">
+          <e p="ISwiperDetector.cs" t="Include" />
+          <e p="MouseSwipeDetector.cs" t="Include" />
+          <e p="ScreenTouchSwipeDetector.cs" t="Include" />
+        </e>
+        <e p="Extensions" t="Include">
+          <e p="FloatExtensions.cs" t="Include" />
+          <e p="ResolutionExtensions.cs" t="Include" />
+          <e p="SwipeExtensions.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="UnityEngineSwipeController.cs" t="Include" />
+        <e p="UnityEngineSwipeDetector.csproj" t="IncludeRecursive" />
+        <e p="Utils" t="Include">
+          <e p="DetectorSettings.cs" t="Include" />
+          <e p="Input" t="Include">
+            <e p="InputData.cs" t="Include" />
+            <e p="InputGrid.cs" t="Include" />
+            <e p="InputInfo.cs" t="Include" />
+          </e>
+          <e p="Send" t="Include">
+            <e p="OptionalSwipeInfo.cs" t="Include" />
+            <e p="SwipeInfo.cs" t="Include" />
+            <e p="TouchInfo.cs" t="Include" />
+          </e>
+          <e p="Special" t="Include">
+            <e p="Condition.cs" t="Include" />
+            <e p="GridCondition.cs" t="Include" />
+            <e p="LengthCondition.cs" t="Include" />
+            <e p="TimeCondition.cs" t="Include" />
+          </e>
+          <e p="SwipeDirection.cs" t="Include" />
+        </e>
+      </e>
     </e>
   </component>
 </project>
