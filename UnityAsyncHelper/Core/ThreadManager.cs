@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
 using JetBrains.Annotations;
+using UnityAsyncHelper.Wrappers;
 using UnityEngine;
 
 namespace UnityAsyncHelper.Core
@@ -27,14 +29,17 @@ namespace UnityAsyncHelper.Core
         /// </summary>
         public static void AsyncExecute(Action asyncAction, [CanBeNull] Action callback)
         {
-            void ExecuteMethod()
-            {
-                asyncAction.Invoke();
-                if(callback != null)
-                    ExecuteOnMainThread(callback);
-            }
-
-            Task.Factory.StartNew(ExecuteMethod);
+            var simpleThreadWrapper = new SimpleTreadWrapper(asyncAction, callback, true);
+            simpleThreadWrapper.Start();
+            
+            // void ExecuteMethod()
+            // {
+            //     asyncAction.Invoke();
+            //     if(callback != null)
+            //         ExecuteOnMainThread(callback);
+            // }
+            //
+            // Task.Factory.StartNew(ExecuteMethod);
         }
         
         /// <summary>
@@ -42,14 +47,17 @@ namespace UnityAsyncHelper.Core
         /// </summary>
         public static void AsyncExecute(Action<object[]> asyncAction, [CanBeNull] Action callback, params object[] invokeArgs)
         {
-            void ExecuteMethod()
-            {
-                asyncAction.Invoke(invokeArgs);
-                if(callback != null)
-                    ExecuteOnMainThread(callback);
-            }
-
-            Task.Factory.StartNew(ExecuteMethod);
+            var threadWrapper = new ParametriseThreadWrapper(asyncAction, callback, invokeArgs, true);
+            threadWrapper.Start();
+            
+            // void ExecuteMethod()
+            // {
+            //     asyncAction.Invoke(invokeArgs);
+            //     if(callback != null)
+            //         ExecuteOnMainThread(callback);
+            // }
+            //
+            // Task.Factory.StartNew(ExecuteMethod);
         }
         
         /// <summary>
@@ -57,14 +65,17 @@ namespace UnityAsyncHelper.Core
         /// </summary>
         public static void AsyncExecute(Func<object[]> asyncAction, [CanBeNull] Action<object[]> callback)
         {
-            void ExecuteMethod()
-            {
-                var results = asyncAction.Invoke();
-                if(callback != null)
-                    ExecuteOnMainThread(()=> callback.Invoke(results));
-            }
-
-            Task.Factory.StartNew(ExecuteMethod);
+            var threadWrapper = new FunctionalThreadWrapper(asyncAction, callback, true);
+            threadWrapper.Start();
+            
+            // void ExecuteMethod()
+            // {
+            //     var results = asyncAction.Invoke();
+            //     if(callback != null)
+            //         ExecuteOnMainThread(()=> callback.Invoke(results));
+            // }
+            //
+            // Task.Factory.StartNew(ExecuteMethod);
         }
 
         /// <summary>

@@ -24,19 +24,13 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0D18E9E4-878A-4081-A336-A61538DC57A0/cb/e60da67b/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SpeechKitApi/Models/SynthesisOptions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0D18E9E4-878A-4081-A336-A61538DC57A0/ee/7472a6d6/TextReader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5DE66FF1-1FCB-4513-8463-255B392B032B/ac/3e7a5542/ThreadState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SpeechKitApi/Utils/Params.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3E4100C5-0380-40BA-A2BA-66BB8A76E424/9c/c924ad36/FileDialog.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/SpeechKitApi/Models/TokenResources/OAuthToken.cs" />
-        <option value="$PROJECT_DIR$/SpeechKitApi/Utils/FloatExtensions.cs" />
-        <option value="$PROJECT_DIR$/SpeechKitApi/Utils/HttpClientExtensions.cs" />
-        <option value="$PROJECT_DIR$/TestYandexSpeachKit/Program.cs" />
-        <option value="$PROJECT_DIR$/TestYandexSpeechKit/FileDialog.cs" />
-        <option value="$PROJECT_DIR$/TestYandexSpeechKit/ClientParams.cs" />
-        <option value="$PROJECT_DIR$/SpeechKitApi/Utils/IoExtensions.cs" />
         <option value="$PROJECT_DIR$/SpeechKitApi/Attributes/EnumNameStringAttribute.cs" />
         <option value="$PROJECT_DIR$/SpeechKitApi/Attributes/EnumValueStringAttribute.cs" />
         <option value="$PROJECT_DIR$/SpeechKitApi/WavConverter.cs" />
@@ -50,7 +44,6 @@
         <option value="$PROJECT_DIR$/SpeechKitApi/Models/SynthesisOptions.cs" />
         <option value="$PROJECT_DIR$/TestYandexSpeechKit/Program.cs" />
         <option value="$PROJECT_DIR$/SpeechKitApi/Wav/WavConverter.cs" />
-        <option value="$PROJECT_DIR$/UnityAsyncHelper/Core/ThreadManager.cs" />
         <option value="$PROJECT_DIR$/SpeechKitApi/Utils/EnumValueNameHelper.cs" />
         <option value="$PROJECT_DIR$/TreeModule/Class1.cs" />
         <option value="$PROJECT_DIR$/TreeModule/Utils/TrakingDirection.cs" />
@@ -61,8 +54,6 @@
         <option value="$PROJECT_DIR$/TreeModule/TreeNode.cs" />
         <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Class1.cs" />
         <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Detectors/ScreenTouchSwipeDetector.cs" />
-        <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Extensions/SwipeExtensions.cs" />
-        <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Extensions/FloatExtensions.cs" />
         <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Extensions/ResolutionExtensions.cs" />
         <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Detectors/ISwiperDetector.cs" />
         <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Detectors/MouseSwipeDetector.cs" />
@@ -81,6 +72,16 @@
         <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Utils/Input/InputGrid.cs" />
         <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Utils/Send/OptionalSwipeInfo.cs" />
         <option value="$USER_HOME$/Documents/Projects/calendar/Assets/Scripts/Swipe/SwipeController.cs" />
+        <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Extensions/SwipeExtensions.cs" />
+        <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Extensions/FloatExtensions.cs" />
+        <option value="$USER_HOME$/Documents/Projects/DaRS/Assets/Scripts/Camera/Video/VideoHandler.cs" />
+        <option value="$PROJECT_DIR$/UnityAsyncHelper/Utils/ThreadStatus.cs" />
+        <option value="$PROJECT_DIR$/UnityAsyncHelper/Wrapper/ThreadWrapperBase.cs" />
+        <option value="$PROJECT_DIR$/UnityAsyncHelper/Wrappers/ThreadWrapperBase.cs" />
+        <option value="$PROJECT_DIR$/UnityAsyncHelper/Wrappers/SimpleTreadWrapper.cs" />
+        <option value="$PROJECT_DIR$/UnityAsyncHelper/Wrappers/ParametriseThreadWrapper.cs" />
+        <option value="$PROJECT_DIR$/UnityAsyncHelper/Wrappers/FunctionalThreadWrapper.cs" />
+        <option value="$PROJECT_DIR$/UnityAsyncHelper/Core/ThreadManager.cs" />
       </list>
     </option>
   </component>
@@ -194,7 +195,12 @@
       <workItem from="1602494080409" duration="18667000" />
       <workItem from="1602611204781" duration="920000" />
       <workItem from="1602645792976" duration="2281000" />
-      <workItem from="1602677334075" duration="5296000" />
+      <workItem from="1602677334075" duration="6155000" />
+      <workItem from="1602772610875" duration="908000" />
+      <workItem from="1603102329997" duration="1371000" />
+      <workItem from="1603204030848" duration="2217000" />
+      <workItem from="1603280013684" duration="1343000" />
+      <workItem from="1603617533676" duration="2795000" />
     </task>
     <servers />
   </component>
@@ -320,11 +326,11 @@
     </state>
     <state x="872" y="272" key="Rider.ProjectTemplateDialog.Size/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1602136196201" />
     <state x="2572" y="273" key="Rider.ProjectTemplateDialog.Size/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1602611232598" />
-    <state x="3712" y="223" key="RiderGenerateDialog" timestamp="1602482371930">
+    <state x="3712" y="223" key="RiderGenerateDialog" timestamp="1603620128782">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
     <state x="1152" y="223" key="RiderGenerateDialog/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1601977133284" />
-    <state x="3712" y="223" key="RiderGenerateDialog/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1602482371930" />
+    <state x="3712" y="223" key="RiderGenerateDialog/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1603620128782" />
     <state x="781" y="185" key="SettingsEditor" timestamp="1601967756390">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
