@@ -4,7 +4,58 @@
     <e p="C:\Users\SplavOP\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
     <e p="C:\Users\SplavOP\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_TestYandexSpeachKit.636568918.00" t="ExcludeRecursive" />
     <e p="C:\Users\SplavOP\source\repos\TestYandexSpeachKit" t="IncludeFlat">
+      <e p="AsyncClientServer" t="IncludeRecursive">
+        <e p="AsyncClientServer.csproj" t="IncludeRecursive" />
+        <e p="Attributes" t="Include">
+          <e p="MessageDestination.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Client" t="Include">
+          <e p="AsynchronousClient.cs" t="Include" />
+          <e p="ClientConnectionObject.cs" t="Include" />
+          <e p="ClientStateObject.cs" t="Include" />
+        </e>
+        <e p="INetworkHelper.cs" t="Include" />
+        <e p="Message" t="Include">
+          <e p="CloseConnectionMessage.cs" t="Include" />
+          <e p="IMessage.cs" t="Include" />
+          <e p="Types" t="Include">
+            <e p="MessageTypeManager.cs" t="Include" />
+            <e p="Utils" t="Include">
+              <e p="DefaultMessageTypes.cs" t="Include" />
+              <e p="MessageTypeInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="SerializeManager.cs" t="Include" />
+        <e p="Server" t="Include">
+          <e p="AsynchronousServer.cs" t="Include" />
+        </e>
+        <e p="Utils" t="Include">
+          <e p="Extensions" t="Include">
+            <e p="EnumExtensions.cs" t="Include" />
+            <e p="MessageExtensions.cs" t="Include" />
+          </e>
+          <e p="MessageDestinationTypes.cs" t="Include" />
+          <e p="Params.cs" t="Include" />
+        </e>
+      </e>
+      <e p="ExtensionsLibrary" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="EnumExtension.cs" t="Include" />
+        <e p="ExtensionsLibrary.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+      </e>
+      <e p="MultiThreadAsyncClientServer" t="Include" />
       <e p="packages" t="ExcludeRecursive" />
+      <e p="SpeechKit" t="Include" />
       <e p="SpeechKitApi" t="IncludeRecursive">
         <e p="Attributes" t="Include">
           <e p="EnumNameStringAttribute.cs" t="Include" />
@@ -79,6 +130,18 @@
           <e p="TrackingDirection.cs" t="Include" />
         </e>
       </e>
+      <e p="UniLog" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Logger.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="UniLog.csproj" t="IncludeRecursive" />
+        <e p="Utils" t="Include">
+          <e p="MessageType.cs" t="Include" />
+        </e>
+      </e>
       <e p="UnityAsyncHelper" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="Core" t="Include">
@@ -138,6 +201,16 @@
           <e p="SwipeDirection.cs" t="Include" />
         </e>
       </e>
+      <e p="UnityUtilities" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Singleton.cs" t="Include" />
+        <e p="UnityUtilities.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="Utilities" t="Include" />
     </e>
   </component>
 </project>

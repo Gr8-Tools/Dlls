@@ -7,6 +7,8 @@
     {
         UnStarted,
         InProgress,
-        Completed
+        Completed,
+        
+        Canceled
     }
 }
