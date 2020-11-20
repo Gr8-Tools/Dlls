@@ -97,7 +97,7 @@ namespace AsyncClientServer.Server
             {
                 var server = (AsynchronousServer) ar.AsyncState;
                 server._allDone.Set();
-                var client = new AsynchronousClient(server._socket.EndAccept(ar), server._raiseCallbacksOnMainThread);
+                var client = new AsynchronousClient(server._socket.EndAccept(ar), false, server._raiseCallbacksOnMainThread);
                 ListenerClientMap[server].Add(client);
 
                 client.Receive();

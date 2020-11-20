@@ -32,46 +32,40 @@ namespace AsyncClientServer.Client
         /// <summary>
         /// Конструктор класса Асинхронного клиента на строне Клиента
         /// </summary>
-        private AsynchronousClient(IPEndPoint remoteEndPoint, bool raiseCallbacksOnMainThread)
+        public AsynchronousClient(IPEndPoint remoteEndPoint, bool isClientSide, bool raiseCallbacksOnMainThread)
         {
             Socket = new Socket(remoteEndPoint.Address.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
-            IsClientSide = true;
+            IsClientSide = isClientSide;
             _raiseCallbacksOnMainThread = raiseCallbacksOnMainThread;
         }
 
         /// <summary>
         /// Констурктор класса асинхронного клиента на стороне Сервера 
         /// </summary>
-        public AsynchronousClient(Socket socket, bool raiseCallbacksOnMainThread)
+        public AsynchronousClient(Socket socket, bool isClientSide, bool raiseCallbacksOnMainThread)
         {
             Socket = socket;
-            IsClientSide = false;
+            IsClientSide = isClientSide;
             _raiseCallbacksOnMainThread = raiseCallbacksOnMainThread;
         }
 
         /// <summary>
         /// Подключается к серверу
         /// </summary>
-        public static AsynchronousClient Connect(IPEndPoint remoteEndPoint, bool raiseCallbacksOnMainThread = true)
+        public void Connect(IPEndPoint remoteEndPoint)
         {
             try
             {
-                var newClient = new AsynchronousClient(remoteEndPoint, raiseCallbacksOnMainThread);
-
-                var connectionObject = new ClientConnectionObject(newClient, remoteEndPoint);
-                newClient.Socket.BeginConnect(remoteEndPoint, ConnectCallback, connectionObject);
-                newClient._connectDone.WaitOne();
-
-                return newClient;
+                var connectionObject = new ClientConnectionObject(this, remoteEndPoint);
+                Socket.BeginConnect(remoteEndPoint, ConnectCallback, connectionObject);
+                _connectDone.WaitOne();
             }
             catch (Exception e)
             {
                 Logger.ShowException(e);
             }
-
-            return null;
         }
-
+        
         /// <summary>
         /// Фиксирует попытку подключения к серверу 
         /// </summary>

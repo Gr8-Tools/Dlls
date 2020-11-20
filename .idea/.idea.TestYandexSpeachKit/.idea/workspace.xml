@@ -32,7 +32,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Utils/Special/LengthCondition.cs" />
         <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/SwipeController.cs" />
         <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/UnityEngineSwipeController.cs" />
         <option value="$PROJECT_DIR$/UnityEngineSwipeDetector/Utils/Input/InputGrid.cs" />
@@ -81,8 +80,9 @@
         <option value="$PROJECT_DIR$/AsyncClientServer/INetworkHelper.cs" />
         <option value="$PROJECT_DIR$/AsyncClientServer/SerializeManager.cs" />
         <option value="$PROJECT_DIR$/AsyncClientServer/Utils/Extensions/MessageExtensions.cs" />
-        <option value="$PROJECT_DIR$/AsyncClientServer/Client/AsynchronousClient.cs" />
         <option value="$PROJECT_DIR$/AsyncClientServer/Server/AsynchronousServer.cs" />
+        <option value="$PROJECT_DIR$/AsyncClientServer/Client/AsynchronousClient.cs" />
+        <option value="$PROJECT_DIR$/TestYandexSpeechKit/ClientParams.cs" />
       </list>
     </option>
   </component>
@@ -206,7 +206,8 @@
       <workItem from="1605509863982" duration="15630000" />
       <workItem from="1605531149039" duration="14853000" />
       <workItem from="1605605349146" duration="49000" />
-      <workItem from="1605609448128" duration="2714000" />
+      <workItem from="1605609448128" duration="3882000" />
+      <workItem from="1605877444261" duration="331000" />
     </task>
     <servers />
   </component>
