@@ -31,15 +31,6 @@ namespace UnityAsyncHelper.Core
         {
             var simpleThreadWrapper = new SimpleTreadWrapper(asyncAction, callback, true);
             simpleThreadWrapper.Start();
-            
-            // void ExecuteMethod()
-            // {
-            //     asyncAction.Invoke();
-            //     if(callback != null)
-            //         ExecuteOnMainThread(callback);
-            // }
-            //
-            // Task.Factory.StartNew(ExecuteMethod);
         }
         
         /// <summary>
@@ -49,15 +40,6 @@ namespace UnityAsyncHelper.Core
         {
             var threadWrapper = new ParametriseThreadWrapper(asyncAction, callback, invokeArgs, true);
             threadWrapper.Start();
-            
-            // void ExecuteMethod()
-            // {
-            //     asyncAction.Invoke(invokeArgs);
-            //     if(callback != null)
-            //         ExecuteOnMainThread(callback);
-            // }
-            //
-            // Task.Factory.StartNew(ExecuteMethod);
         }
         
         /// <summary>
@@ -67,15 +49,6 @@ namespace UnityAsyncHelper.Core
         {
             var threadWrapper = new FunctionalThreadWrapper(asyncAction, callback, true);
             threadWrapper.Start();
-            
-            // void ExecuteMethod()
-            // {
-            //     var results = asyncAction.Invoke();
-            //     if(callback != null)
-            //         ExecuteOnMainThread(()=> callback.Invoke(results));
-            // }
-            //
-            // Task.Factory.StartNew(ExecuteMethod);
         }
 
         /// <summary>
