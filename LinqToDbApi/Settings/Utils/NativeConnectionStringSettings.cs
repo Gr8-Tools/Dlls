@@ -8,23 +8,16 @@ namespace LinqToDbApi.Settings.Utils
     /// </summary>
     public class NativeConnectionStringSettings: IConnectionStringSettings
     {
+        public NpgsqlConnectionTypes ConnectionType { get; } = NpgsqlConnectionTypes.Null;
+        
         public string Name { get; set; } = "PostgreSQL";
         public string ProviderName { get; set; } = "Npgsql";
         public string ConnectionString { get; set; }
         public bool IsGlobal { get; }
         
-        public NativeConnectionStringSettings()
-        {
-            IsGlobal = false;
-        }
-
-        public NativeConnectionStringSettings(bool isGlobal)
-        {
-            IsGlobal = isGlobal;
-        }
-
         public NativeConnectionStringSettings(NativeConnectionStringSettingsOptions options, bool isGlobal = false)
         {
+            ConnectionType = options.ConnectionType;
             IsGlobal = isGlobal;
             ConnectionString = options.GetConnectionString;
         }

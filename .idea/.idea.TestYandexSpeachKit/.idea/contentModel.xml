@@ -77,14 +77,17 @@
       <e p="Linq2DbTest" t="IncludeRecursive">
         <e p="app.config" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Examples.cs" t="Include" />
         <e p="Linq2DbTest.csproj" t="IncludeRecursive" />
         <e p="Models" t="Include">
           <e p="Category.cs" t="Include" />
+          <e p="City.cs" t="Include" />
+          <e p="Employee.cs" t="Include" />
           <e p="Examples" t="Include">
-            <e p="LeftJoinProduct.cs" t="Include" />
+            <e p="JoinProduct.cs" t="Include" />
           </e>
           <e p="Product.cs" t="Include" />
+          <e p="ProductsSuppliers.cs" t="Include" />
+          <e p="Supplier.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -97,9 +100,11 @@
           <e p="Connections" t="Include">
             <e p="TestDataConnection.cs" t="Include" />
           </e>
+          <e p="Examples.cs" t="Include" />
         </e>
         <e p="Program.cs" t="Include" />
         <e p="Settings" t="Include">
+          <e p="CteExamples.cs" t="Include" />
           <e p="TestConnectionSettings.cs" t="Include" />
         </e>
       </e>
@@ -132,6 +137,9 @@
         </e>
         <e p="Settings" t="Include">
           <e p="ConnectionConfigSettings.cs" t="Include" />
+          <e p="Extensions" t="Include">
+            <e p="NativeConnectionStringSettingsOptionsExtensions.cs" t="Include" />
+          </e>
           <e p="NativeConnectionSettings.cs" t="Include" />
           <e p="Utils" t="Include">
             <e p="ConnectionStringOptions" t="Include">
@@ -146,6 +154,7 @@
               <e p="WindowsSecurityNativeConnectionStringSettingsOptions.cs" t="Include" />
             </e>
             <e p="NativeConnectionStringSettings.cs" t="Include" />
+            <e p="NativeConnectionStringSettingsOptionsData.cs" t="Include" />
             <e p="NpgsqlConnectionTypes.cs" t="Include" />
           </e>
         </e>

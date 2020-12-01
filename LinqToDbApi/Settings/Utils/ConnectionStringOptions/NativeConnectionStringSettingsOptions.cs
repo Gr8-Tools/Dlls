@@ -5,6 +5,10 @@
     /// </summary>
     public abstract class NativeConnectionStringSettingsOptions
     {
+        public const string DEFAULT_SERVER_NAME = "localhost";
+
+        public const int DEFAULT_SERVER_PORT = 5432;
+        
         /// <summary>
         /// ConnectionType
         /// </summary>
@@ -13,12 +17,12 @@
         /// <summary>
         /// ServerAddress
         /// </summary>
-        public string Server { get; set; } = "localhost";
+        public string Server { get; set; } = DEFAULT_SERVER_NAME;
         
         /// <summary>
         /// Port number
         /// </summary>
-        public int Port { get; set; } = 5432;
+        public int Port { get; set; } = DEFAULT_SERVER_PORT;
 
         /// <summary>
         /// DataBase Name
@@ -28,6 +32,13 @@
         protected NativeConnectionStringSettingsOptions(string dataBase)
         {
             DataBase = dataBase;
+        }
+
+        public NativeConnectionStringSettingsOptions Update(string? server, int? port)
+        {
+            Server = server ?? DEFAULT_SERVER_NAME;
+            Port = port ?? DEFAULT_SERVER_PORT;
+            return this;
         }
 
         /// <summary>

@@ -17,7 +17,7 @@ namespace linq2dbTest.Models
         
         [Column(Name = "CATEGORY_ID"), NotNull]
         public int CategoryId { get; set; }
-
+        
         #region ASSOSIATIONS
 
         /// <summary>

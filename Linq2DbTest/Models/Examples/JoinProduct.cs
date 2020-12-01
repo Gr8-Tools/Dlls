@@ -1,6 +1,6 @@
 ﻿namespace linq2dbTest.Models.Examples
 {
-    public class LeftJoinProduct
+    public class JoinProduct
     {
         public int Id { get; set; }
         
@@ -11,12 +11,12 @@
         public override string ToString()
             => $"LeftJoinResult: \"ID\"=[{Id}]; \"Name\"=\"{Name}\"; \"CategoryName\"=\"{CategoryName}\";";
         
-        public static LeftJoinProduct Build(Product product, Category category)
+        public static JoinProduct Build(Product? product, Category category)
         {
-            return new LeftJoinProduct
+            return new JoinProduct
             {
-                Id = product.Id,
-                Name = product.Name,
+                Id = product?.Id ?? -1,
+                Name = product?.Name ?? "",
                 CategoryName = category.Name
             };
         }

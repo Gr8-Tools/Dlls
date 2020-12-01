@@ -18,6 +18,14 @@ namespace Linq2DbTest.Operations.Connections
         
         public ITable<Category> Categories => GetTable<Category>();
 
+        public ITable<Employee> Employees => GetTable<Employee>();
+
+        public ITable<City> Cities => GetTable<City>();
+
+        public ITable<Supplier> Suppliers => GetTable<Supplier>();
+
+        public ITable<ProductsSuppliers> ProductsSuppliersMap => GetTable<ProductsSuppliers>();
+
         #endregion
 
         #region CONSTRUCTORS
@@ -36,7 +44,11 @@ namespace Linq2DbTest.Operations.Connections
         public override IEnumerable<Type> SelfInitialize => new []
         {
             typeof(Category),
-            typeof(Product)
+            typeof(Product),
+            typeof(Employee),
+            typeof(City),
+            typeof(Supplier),
+            typeof(ProductsSuppliers)
         };
 
         /// <summary>

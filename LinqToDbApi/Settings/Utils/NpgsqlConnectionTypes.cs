@@ -2,6 +2,7 @@
 {
     public enum NpgsqlConnectionTypes
     {
+        Null,
         Standard,
         WindowsSecurity,
         CommandTimeout,
