@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option csharp_namespace = "gRpcLinq2dbServer.ProductSpace";
+
+package cities;
+
+service City {
+  rpc GetCityInfo (CityInfoIdentity) returns (CityInfoEntity);
+  rpc GetCityInfos (stream CityInfoIdentity) returns (stream CityInfoEntity);  
+}
+
+message CityInfoIdentity {
+  uint32 id = 1;
+}
+
+message CityInfoEntity {
+  uint32 id = 1;
+  string name = 2;
+}

@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+option csharp_namespace = "gRpcLinq2dbServer.ProductSpace";
+
+package products;
+
+import "categories.proto";
+
+service Supplier {
+  rpc GetProductInfo (ProductInfoIdentity) returns (ProductInfoEntity);
+  rpc GetProductInfos (stream ProductInfoIdentity) returns (stream ProductInfoEntity);
+  
+  rpc GetExtendedProductInfo (ProductInfoIdentity) returns (ExtendedProductInfoEntity);
+  rpc GetExtendedProductInfos (stream ProductInfoIdentity) returns (stream ExtendedProductInfoEntity);
+}
+
+message ProductInfoIdentity {
+  uint32 id = 1;
+}
+
+message ProductInfoEntity {
+  uint32 id = 1;
+  string name = 2;
+}
+
+message ExtendedProductInfoEntity{
+  uint32 id = 1;
+  string name = 2;
+  categories.CategoryInfoReply category_info = 3;
+}
