@@ -41,6 +41,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/386D468C-F229-4878-A6E6-8C12A4DD1BC7/10A/DataConnection.Linq.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/gRpcLinq2dbServer/DataSource/Connection/DataBaseConnection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/A9C37662-579A-499A-A4DE-B3C85349280D/1E0/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/386D468C-F229-4878-A6E6-8C12A4DD1BC7/7A/IConnectionStringSettings.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/386D468C-F229-4878-A6E6-8C12A4DD1BC7/B2/TempTable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/386D468C-F229-4878-A6E6-8C12A4DD1BC7/259/Query.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3E4100C5-0380-40BA-A2BA-66BB8A76E424/9c/c924ad36/FileDialog.cs" root0="SKIP_HIGHLIGHTING" />
@@ -69,13 +70,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Linq2DbTest/Models/Examples/JoinProduct.cs" />
-        <option value="$PROJECT_DIR$/Linq2DbTest/Examples.cs" />
-        <option value="$PROJECT_DIR$/Linq2DbTest/Settings/EmployeeExamples.cs" />
-        <option value="$PROJECT_DIR$/Linq2DbTest/Models/Employee.cs" />
-        <option value="$PROJECT_DIR$/Linq2DbTest/Settings/CteExamples.cs" />
-        <option value="$PROJECT_DIR$/Linq2DbTest/Models/Suplier.cs" />
-        <option value="$PROJECT_DIR$/Linq2DbTest/Models/Supplier.cs" />
         <option value="$PROJECT_DIR$/Linq2DbTest/Models/City.cs" />
         <option value="$PROJECT_DIR$/Linq2DbTest/Operations/Connections/TestDataConnection.cs" />
         <option value="$PROJECT_DIR$/LinqToDbApi/Extensions/DataConnectionExtensions.cs" />
@@ -87,7 +81,6 @@
         <option value="$PROJECT_DIR$/LinqToDbApi/Settings/Utils/NpgsqlConnectionTypes.cs" />
         <option value="$PROJECT_DIR$/LinqToDbApi/Settings/Utils/NativeConnectionStringSettings.cs" />
         <option value="$PROJECT_DIR$/LinqToDbApi/Settings/NativeConnectionSettings.cs" />
-        <option value="$PROJECT_DIR$/Linq2DbTest/Program.cs" />
         <option value="$PROJECT_DIR$/gRpcClientTest/Protos/greet.proto" />
         <option value="$PROJECT_DIR$/gRpcServerTest/Properties/launchSettings.json" />
         <option value="$PROJECT_DIR$/gRpcServerTest/Protos/customers.cs" />
@@ -104,22 +97,30 @@
         <option value="$PROJECT_DIR$/gRpcLinq2dbServer/DataSource/Models/Product.cs" />
         <option value="$PROJECT_DIR$/gRpcLinq2dbServer/DataSource/Models/ProductsSuppliers.cs" />
         <option value="$PROJECT_DIR$/gRpcLinq2dbServer/DataSource/Models/Supplier.cs" />
-        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/DataSource/Connection/DataBaseConnection.cs" />
         <option value="$PROJECT_DIR$/gRpcClientTest/Protos/customers.proto" />
         <option value="$PROJECT_DIR$/gRpcClientTest/gRpcClientTest.csproj" />
-        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Program.cs" />
         <option value="$PROJECT_DIR$/gRpcLinq2dbServer/appsettings.Development.json" />
-        <option value="$PROJECT_DIR$/gRpcWithLinq2dbClient/Program.cs" />
         <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Services/ProductSpace/ProductsService.cs" />
-        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Startup.cs" />
         <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Protos/ProductSpace/products_suppliers.proto" />
+        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Protos/database.proto" />
+        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Services/GreeterService.cs" />
+        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Protos/base_replies.proto" />
+        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/gRpcLinq2dbServer.csproj" />
+        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Services/ProdcutSpace/ProductService.cs" />
+        <option value="$PROJECT_DIR$/LinqToDbApi/Connection/BaseDataConnection.cs" />
+        <option value="$PROJECT_DIR$/gRpcWithLinq2dbClient/Program.cs" />
+        <option value="$PROJECT_DIR$/Linq2DbTest/Program.cs" />
+        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/DataSource/Connection/ConnectionSettings.cs" />
+        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Startup.cs" />
+        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Program.cs" />
+        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/DataSource/Connection/DataBaseConnection.cs" />
+        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Protos/ProductSpace/products.proto" />
         <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Protos/ProductSpace/categories.proto" />
         <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Protos/ProductSpace/suppliers.proto" />
         <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Protos/ProductSpace/cities.proto" />
         <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Protos/ProductSpace/map_product_supplier.proto" />
-        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Protos/ProductSpace/products.proto" />
-        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Protos/database.proto" />
-        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/gRpcLinq2dbServer.csproj" />
+        <option value="$PROJECT_DIR$/gRpcWithLinq2dbClient/gRpcWithLinq2dbClient.csproj" />
+        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Services/ProductSpace/ProductService.cs" />
       </list>
     </option>
   </component>
@@ -350,6 +351,7 @@
       <workItem from="1606898046042" duration="23251000" />
       <workItem from="1606998447595" duration="4113000" />
       <workItem from="1607002804687" duration="110000" />
+      <workItem from="1607327709138" duration="6248000" />
     </task>
     <servers />
   </component>
@@ -496,6 +498,10 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state width="1288" height="548" key="XDebugger.FullValuePopup/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1601992768103" />
+    <state x="2553" y="0" width="871" height="1087" key="dock-window-1" timestamp="1607328251356">
+      <screen x="2560" y="0" width="2560" height="1080" />
+    </state>
+    <state x="2553" y="0" width="871" height="1087" key="dock-window-1/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1607328251356" />
     <state x="936" y="250" key="run.anything.popup" timestamp="1607002171752">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>

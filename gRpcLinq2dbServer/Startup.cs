@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using gRpcLinq2dbServer.Services;
+using gRpcLinq2dbServer.Services.ProductSpace;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
@@ -28,6 +30,7 @@ namespace gRpcLinq2dbServer
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapGrpcService<GreeterService>();
+                endpoints.MapGrpcService<ProductService>();
                 
                 endpoints.MapGet("/", async context =>
                 {

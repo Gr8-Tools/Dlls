@@ -11,11 +11,10 @@ namespace gRpcWithLinq2dbClient
         {
             var chanel = GrpcChannel.ForAddress("https://localhost:5001");
             
-            // var client = new Product.ProductClient(chanel);
-            // var input = new ProductInfoRequest {Id = 1};
-            // var reply = await client.GetProductInfoAsync(input);
-            //
-            // Console.WriteLine(reply);
+            var client = new Product.ProductClient(chanel);
+            var input = new ProductInfoIdentity {Id = 1};
+            var reply = await client.GetProductInfoAsync(input);
+            Console.WriteLine(reply);
             
             Console.ReadLine();
         }

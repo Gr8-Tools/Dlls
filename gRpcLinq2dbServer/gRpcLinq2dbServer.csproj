@@ -14,12 +14,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Protobuf Include="Protos\base_replies.proto" ProtoRoot="Protos\" GrpcServices="Server" />
     <Protobuf Include="Protos\greet.proto" GrpcServices="Server" />
-    <Protobuf Include="Protos\ProductSpace\categories.proto" ProtoRoot="Protos\ProductSpace\" GrpcServices="Server" />
-    <Protobuf Include="Protos\ProductSpace\cities.proto" ProtoRoot="Protos\ProductSpace\" GrpcServices="Server" />
-    <Protobuf Include="Protos\ProductSpace\map_product_supplier.proto" ProtoRoot="Protos\ProductSpace\" GrpcServices="Server" />
-    <Protobuf Include="Protos\ProductSpace\products.proto" ProtoRoot="Protos\ProductSpace\" GrpcServices="Server" />
-    <Protobuf Include="Protos\ProductSpace\suppliers.proto" ProtoRoot="Protos\ProductSpace\" GrpcServices="Server" />
+    <Protobuf Include="Protos\ProductSpace\categories.proto" ProtoRoot="Protos\" GrpcServices="Server" />
+    <Protobuf Include="Protos\ProductSpace\cities.proto" ProtoRoot="Protos\" GrpcServices="Server" />
+    <Protobuf Include="Protos\ProductSpace\map_product_supplier.proto" ProtoRoot="Protos\" GrpcServices="Server" />
+    <Protobuf Include="Protos\ProductSpace\products.proto" ProtoRoot="Protos\" GrpcServices="Server" />
+    <Protobuf Include="Protos\ProductSpace\suppliers.proto" ProtoRoot="Protos\" GrpcServices="Server" />
   </ItemGroup>
 	
 </Project>

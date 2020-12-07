@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using gRpcLinq2dbServer.DataSource.Connection;
+using LinqToDbApi.Settings;
+using LinqToDbApi.Settings.Utils;
+using LinqToDbApi.Settings.Utils.ConnectionStringOptions;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
@@ -12,7 +16,10 @@ namespace gRpcLinq2dbServer
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            using (var db = ConnectToDB())
+            {
+                CreateHostBuilder(args).Build().Run();    
+            }
         }
 
         // Additional configuration is required to successfully run gRPC on macOS.
@@ -23,5 +30,24 @@ namespace gRpcLinq2dbServer
                 {
                     webBuilder.UseStartup<Startup>();
                 });
+
+        private static DataBaseConnection ConnectToDB()
+        {
+            var options = NativeConnectionSettings.GenerateAllOptions(
+                new NativeConnectionStringSettingsOptionsData
+                {
+                    DataBase = "linq2dbTest",
+                    UserId = "postgres",
+                    Password = "A!s2D#f4"
+                }).ToArray();
+            
+            var connectionSettings = new ConnectionSettings(options);
+            var connectionString = connectionSettings.Get(NpgsqlConnectionTypes.Standard);
+
+            if (connectionString == null)
+                throw new Exception($"Connection string of type [{typeof(StandardNativeConnectionStringSettingsOptions)}] is not defined");
+            
+            return new DataBaseConnection(connectionString);
+        }
     }
 }

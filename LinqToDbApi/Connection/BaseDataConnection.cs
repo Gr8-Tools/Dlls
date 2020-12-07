@@ -82,5 +82,10 @@ namespace LinqToDbApi.Connection
             if (needUpdatePairs.Any())
                 onExistedTablesStructureNeedUpdate(needUpdatePairs);
         }
+
+        public static BaseDataConnection? GetConnection(string database)
+        {
+            return Instances.FirstOrDefault(i => i.Connection.Database.Equals(database));
+        }
     }
 }
