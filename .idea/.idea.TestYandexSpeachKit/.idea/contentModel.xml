@@ -229,6 +229,9 @@
             <e p="suppliers.proto" t="Include" />
           </e>
         </e>
+        <e p="ServiceControllers" t="Include">
+          <e p="ProductController.cs" t="Include" />
+        </e>
       </e>
       <e p="Linq2db" t="Include" />
       <e p="Linq2DbTest" t="IncludeRecursive">

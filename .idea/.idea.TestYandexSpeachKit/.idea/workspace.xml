@@ -51,6 +51,7 @@
     <setting file="file://$PROJECT_DIR$/SpeechKitApi/Utils/HttpClientExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0D18E9E4-878A-4081-A336-A61538DC57A0/ca/89ccb9b5/__Error.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/401BB0E3-FFF2-41AB-9478-75D8D72F610A/46/5d6c0eda/HttpClient.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/A9C37662-579A-499A-A4DE-B3C85349280D/38/String.Manipulation.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0D18E9E4-878A-4081-A336-A61538DC57A0/a8/212ee5db/FileStream.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/50FE65A4-93A0-4952-84F1-E3562EFBE38D/d2/5baba4b1/Path.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SpeechKitApi/Attributes/EnumNameStringAttribute.cs" root0="FORCE_HIGHLIGHTING" />
@@ -70,7 +71,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Linq2DbTest/Models/City.cs" />
         <option value="$PROJECT_DIR$/Linq2DbTest/Operations/Connections/TestDataConnection.cs" />
         <option value="$PROJECT_DIR$/LinqToDbApi/Extensions/DataConnectionExtensions.cs" />
         <option value="$PROJECT_DIR$/Linq2DbTest/Models/ProductsSuppliers.cs" />
@@ -108,11 +108,9 @@
         <option value="$PROJECT_DIR$/gRpcLinq2dbServer/gRpcLinq2dbServer.csproj" />
         <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Services/ProdcutSpace/ProductService.cs" />
         <option value="$PROJECT_DIR$/LinqToDbApi/Connection/BaseDataConnection.cs" />
-        <option value="$PROJECT_DIR$/gRpcWithLinq2dbClient/Program.cs" />
         <option value="$PROJECT_DIR$/Linq2DbTest/Program.cs" />
         <option value="$PROJECT_DIR$/gRpcLinq2dbServer/DataSource/Connection/ConnectionSettings.cs" />
         <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Startup.cs" />
-        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Program.cs" />
         <option value="$PROJECT_DIR$/gRpcLinq2dbServer/DataSource/Connection/DataBaseConnection.cs" />
         <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Protos/ProductSpace/products.proto" />
         <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Protos/ProductSpace/categories.proto" />
@@ -120,7 +118,10 @@
         <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Protos/ProductSpace/cities.proto" />
         <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Protos/ProductSpace/map_product_supplier.proto" />
         <option value="$PROJECT_DIR$/gRpcWithLinq2dbClient/gRpcWithLinq2dbClient.csproj" />
+        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Program.cs" />
         <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Services/ProductSpace/ProductService.cs" />
+        <option value="$PROJECT_DIR$/gRpcWithLinq2dbClient/Program.cs" />
+        <option value="$PROJECT_DIR$/gRpcWithLinq2dbClient/ServiceControllers/ProductController.cs" />
       </list>
     </option>
   </component>
@@ -351,7 +352,8 @@
       <workItem from="1606898046042" duration="23251000" />
       <workItem from="1606998447595" duration="4113000" />
       <workItem from="1607002804687" duration="110000" />
-      <workItem from="1607327709138" duration="6248000" />
+      <workItem from="1607327709138" duration="7662000" />
+      <workItem from="1607408753684" duration="7300000" />
     </task>
     <servers />
   </component>
@@ -498,10 +500,10 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state width="1288" height="548" key="XDebugger.FullValuePopup/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1601992768103" />
-    <state x="2553" y="0" width="871" height="1087" key="dock-window-1" timestamp="1607328251356">
+    <state x="2553" y="0" width="840" height="1087" key="dock-window-1" timestamp="1607413932602">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
-    <state x="2553" y="0" width="871" height="1087" key="dock-window-1/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1607328251356" />
+    <state x="2553" y="0" width="840" height="1087" key="dock-window-1/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1607413932602" />
     <state x="936" y="250" key="run.anything.popup" timestamp="1607002171752">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
