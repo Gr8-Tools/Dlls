@@ -36,8 +36,8 @@
         <Reference Include="System.Core" />
         <Reference Include="System.Data" />
         <Reference Include="System.Xml" />
-        <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-          <HintPath>..\..\..\..\..\..\Program Files\Unity\2019.3.15\Editor\Data\Managed\UnityEngine.dll</HintPath>
+        <Reference Include="UnityEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\..\..\Program Files\Unity\Editors\2019.3.15\Data\Managed\UnityEditor.dll</HintPath>
         </Reference>
     </ItemGroup>
     <ItemGroup>

@@ -30,11 +30,22 @@ namespace gRpcWithLinq2dbClient.ServiceControllers
 
             return null;
         }
+        
+        private async Task<ExtendedProductInfoEntity> GetExtendedInfo(int? id, int? minValue, int? maxValue)
+        {
+            IEnumerator<ProductInfoIdentity> identities;
+            if ((identities = GenerateIdentities(minValue, maxValue, id)).MoveNext())
+                return await _client.GetExtendedProductInfoAsync(identities.Current);
+
+            return null;
+        }
 
         //ToDo: https://github.com/grpc/grpc/blob/v1.33.2/examples/csharp/RouteGuide/RouteGuideServer/RouteGuideImpl.cs
         //ToDo: https://github.com/grpc/grpc/blob/v1.33.2/examples/csharp/RouteGuide/RouteGuideClient/Program.cs
-        private async Task<IEnumerable<ProductInfoEntity>> GetSimpleInfos(int? minValue, int? maxValue, params int?[] ids)
+        private async Task<IEnumerable<ProductInfoEntity>> GetSimpleInfos(
+            int? minValue, int? maxValue, params int?[] ids)
         {
+            var list = new List<ProductInfoEntity>();
             var identities = GenerateIdentities(minValue, maxValue, ids);
             using (var call = _client.GetProductInfos())
             {
@@ -42,8 +53,21 @@ namespace gRpcWithLinq2dbClient.ServiceControllers
                     await call.RequestStream.WriteAsync(identities.Current);
 
                 await call.RequestStream.CompleteAsync();
+
+                while (await call.ResponseStream.MoveNext())
+                    list.Add(call.ResponseStream.Current);
             }
-        } 
+
+            return list;
+        }
+
+        //ToDo:https://github.com/grpc/grpc-dotnet/blob/master/examples/Mailer/Client/Program.cs
+        //ToDo: https://github.com/grpc/grpc-dotnet/blob/master/examples/Mailer/Server/Services/MailerService.cs
+        private async Task<IEnumerable<ExtendedProductInfoEntity>> GetExtendedInfos(
+            int? minValue, int? maxValue, params int?[] ids)
+        {
+            
+        }
 
         public static ProductController Create(GrpcChannel channel)
         {

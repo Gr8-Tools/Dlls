@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\SplavOP\.nuget\packages\linq2db.postgresql\3.1.6\contentFiles\any\any\LinqToDB.Templates" t="Include">
+    <e p="C:\Users\5rota1\.nuget\packages\linq2db.postgresql\3.1.6\contentFiles\any\any\LinqToDB.Templates" t="Include">
       <e p="CopyMe.PostgreSQL.tt.txt" t="Include" />
       <e p="DataAnnotations.ttinclude" t="Include" />
       <e p="DataModel.ttinclude" t="Include" />
@@ -20,10 +20,9 @@
       <e p="T4Model.ttinclude" t="Include" />
       <e p="Validation.ttinclude" t="Include" />
     </e>
-    <e p="C:\Users\SplavOP\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\SplavOP\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_TestYandexSpeachKit.636568918.00" t="ExcludeRecursive" />
-    <e p="C:\Users\SplavOP\AppData\Roaming\JetBrains\Rider2020.2\consoles\db" t="IncludeRecursive" />
-    <e p="C:\Users\SplavOP\source\repos\TestYandexSpeachKit" t="IncludeFlat">
+    <e p="C:\Users\5rota1\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\5rota1\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_TestYandexSpeachKit.-1961900535.00" t="ExcludeRecursive" />
+    <e p="C:\Users\5rota1\Documents\Projects\Dlls" t="IncludeFlat">
       <e p="AsyncClientServer" t="IncludeRecursive">
         <e p="AsyncClientServer.csproj" t="IncludeRecursive" />
         <e p="Attributes" t="Include">

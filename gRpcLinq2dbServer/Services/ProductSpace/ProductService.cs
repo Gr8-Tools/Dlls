@@ -36,6 +36,32 @@ namespace gRpcLinq2dbServer.Services.ProductSpace
                 Name = result.Name
             });
         }
+        
+        public override Task<ExtendedProductInfoEntity> GetExtendedProductInfo(ProductInfoIdentity request, ServerCallContext context)
+        {
+            var dataConnection = DataBaseConnection.GetConnection("linq2dbTest");
+            if (dataConnection == null)
+                return Task.FromResult(GetExtendedEmpty(request, "<NO_CONNECTION>"));
+
+            var result = dataConnection.Products
+                .Where(p => p.Id == request.Id)
+                .LoadWith(p => p.CategoryIdfKey)
+                .SingleOrDefault();
+            
+            if(result == null)
+                return Task.FromResult(GetExtendedEmpty(request, "<NO_ENTITY>"));
+
+            return Task.FromResult(new ExtendedProductInfoEntity
+            {
+                Id = result.Id,
+                Name = result.Name,
+                CategoryInfo = new CategoryInfoEntity
+                {
+                    Id = result.CategoryIdfKey.Id,
+                    Name = result.CategoryIdfKey.Name
+                }
+            });
+        }
 
         /// <summary>
         /// EXAMPLE #1:
@@ -81,10 +107,53 @@ namespace gRpcLinq2dbServer.Services.ProductSpace
                 });
             }
         }
-        
+
+        /// <summary>
+        /// Example #2:
+        /// Foreach input identity send information 
+        /// </summary>
+        public override async Task GetExtendedProductInfos(IAsyncStreamReader<ProductInfoIdentity> requestStream, IServerStreamWriter<ExtendedProductInfoEntity> responseStream,
+            ServerCallContext context)
+        {
+            DataBaseConnection? dataConnection = null;
+            while (await requestStream.MoveNext(context.CancellationToken))
+            {
+                if (dataConnection == null && (dataConnection = DataBaseConnection.GetConnection("linq2dbTest")) == null)
+                {
+                    await responseStream.WriteAsync(GetExtendedEmpty(requestStream.Current, "<NO_CONNECTION>"));
+                }
+                else
+                {
+                    var result = dataConnection.Products
+                        .Where(p => p.Id == requestStream.Current.Id)
+                        .LoadWith(p => p.CategoryIdfKey)
+                        .SingleOrDefault();
+
+                    if (result == null)
+                        await responseStream.WriteAsync(GetExtendedEmpty(requestStream.Current.Id, "<NO_ENTITY>"));
+                    else
+                        await responseStream.WriteAsync(new ExtendedProductInfoEntity
+                        {
+                            Id = result.Id,
+                            Name = result.Name,
+                            CategoryInfo = new CategoryInfoEntity
+                            {
+                                Id = result.CategoryIdfKey.Id,
+                                Name = result.CategoryIdfKey.Name
+                            }
+                        });
+                }                
+            }
+        }
+
         private static ProductInfoEntity GetEmpty(ProductInfoIdentity request, string errorValue)
         {
             return GetEmpty(request.Id, errorValue);
+        }
+        
+        private static ExtendedProductInfoEntity GetExtendedEmpty(ProductInfoIdentity request, string errorValue)
+        {
+            return GetExtendedEmpty(request.Id, errorValue);
         }
 
         private static ProductInfoEntity GetEmpty(int id, string errorValue)
@@ -93,6 +162,20 @@ namespace gRpcLinq2dbServer.Services.ProductSpace
             {
                 Id = id,
                 Name = errorValue
+            };
+        }
+
+        private static ExtendedProductInfoEntity GetExtendedEmpty(int id, string errorValue)
+        {
+            return new ExtendedProductInfoEntity
+            {
+                Id = id,
+                Name = errorValue,
+                CategoryInfo = new CategoryInfoEntity
+                {
+                    Id = 0,
+                    Name = errorValue
+                }
             };
         }
     }
