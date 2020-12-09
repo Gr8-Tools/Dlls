@@ -7,6 +7,8 @@ using gRpcLinq2dbServer.ProductSpace;
 
 namespace gRpcWithLinq2dbClient.ServiceControllers
 {
+    //ToDo: https://github.com/grpc/grpc-dotnet/blob/master/examples/Mailer/Client/Program.cs
+    //ToDo: https://github.com/grpc/grpc/blob/v1.33.2/examples/csharp/RouteGuide/RouteGuideClient/Program.cs
     public class ProductController
     {
         private const int MIN_RANDOM_VALUE = 1;
@@ -39,9 +41,7 @@ namespace gRpcWithLinq2dbClient.ServiceControllers
 
             return null;
         }
-
-        //ToDo: https://github.com/grpc/grpc/blob/v1.33.2/examples/csharp/RouteGuide/RouteGuideServer/RouteGuideImpl.cs
-        //ToDo: https://github.com/grpc/grpc/blob/v1.33.2/examples/csharp/RouteGuide/RouteGuideClient/Program.cs
+        
         private async Task<IEnumerable<ProductInfoEntity>> GetSimpleInfos(
             int? minValue, int? maxValue, params int?[] ids)
         {
@@ -61,14 +61,55 @@ namespace gRpcWithLinq2dbClient.ServiceControllers
             return list;
         }
 
-        //ToDo:https://github.com/grpc/grpc-dotnet/blob/master/examples/Mailer/Client/Program.cs
-        //ToDo: https://github.com/grpc/grpc-dotnet/blob/master/examples/Mailer/Server/Services/MailerService.cs
+        
         private async Task<IEnumerable<ExtendedProductInfoEntity>> GetExtendedInfos(
             int? minValue, int? maxValue, params int?[] ids)
         {
-            
+            var list = new List<ExtendedProductInfoEntity>();
+            var identities = GenerateIdentities(minValue, maxValue, ids);
+            using (var call = _client.GetExtendedProductInfos())
+            {
+                var responseTask = Task.Run(async () =>
+                {
+                    while (await call.ResponseStream.MoveNext())
+                        list.Add(call.ResponseStream.Current);
+                });
+
+                while (identities.MoveNext())
+                    await call.RequestStream.WriteAsync(identities.Current);
+
+                await call.RequestStream.CompleteAsync();
+                await responseTask;
+            }
+
+            return list;
         }
 
+        private async Task<uint> SetExtendedInfos(IEnumerable<KeyValuePair<KeyValuePair<int, string>, KeyValuePair<int, string>>> newItems)
+        {
+            using (var call = _client.SetExtendedProductInfos())
+            {
+                foreach (var (product, category) in newItems)
+                {
+                    var request = new ExtendedProductInfoEntity
+                    {
+                        Id = product.Key,
+                        Name = product.Value,
+                        CategoryInfo = new CategoryInfoEntity
+                        {
+                            Id = category.Key,
+                            Name = category.Value
+                        }
+                    };
+                    await call.RequestStream.WriteAsync(request);
+                }
+                await call.RequestStream.CompleteAsync();
+                
+                var result = await call.ResponseAsync;
+                return result.Count;
+            }
+        }
+        
         public static ProductController Create(GrpcChannel channel)
         {
             return Instance ??= new ProductController(channel);
@@ -80,7 +121,7 @@ namespace gRpcWithLinq2dbClient.ServiceControllers
         /// <param name="commandParts">
         /// [0] - "p"
         /// [1] - "get"/"set"
-        /// [2] - "single"/"extended"
+        /// [2] - "simple"/"extended"
         /// [3] - "single"/"stream"
         /// </param>
         /// <returns>Result, if command is known</returns>
@@ -89,11 +130,37 @@ namespace gRpcWithLinq2dbClient.ServiceControllers
             switch (commandParts[1])
             {
                 case "get":
-                    
-                    break;
+                    return TranslateGetCommand(in commandParts);
                 case "set":
-                    
-                    break;
+                    return TranslateSetCommand(in commandParts);
+            }
+
+            return false;
+        }
+
+        private static bool TranslateGetCommand(in string[] commandParts)
+        {
+            switch (commandParts[2])
+            {
+                case "simple":
+                    return true;
+                case "extended":
+                    return true;
+            }
+
+            return false;
+        }
+
+        private static bool TranslateSetCommand(in string[] commandParts)
+        {
+            switch (commandParts[2])
+            {
+                case "simple":
+                    throw new Exception("\"Simple\" requests for SET operation are not supported!");
+                case "extended":
+                    if(commandParts[3] == "single")
+                        throw new Exception("SET \"Single\" entity is not supported!");
+                    return true;
             }
 
             return false;

@@ -24,16 +24,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/SpeechKitApi/Models/SynthesisOptions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/gRpcLinq2dbServer/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/gRpcLinq2dbServer/Services/GreeterService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/gRpcLinq2dbServer/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SpeechKitApi/Attributes/EnumNameStringAttribute.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/gRpcLinq2dbServer/Startup.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SpeechKitApi/Utils/Params.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SpeechKitApi/Utils/FloatExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/gRpcLinq2dbServer/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SpeechKitApi/Models/SynthesisOptions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/gRpcLinq2dbServer/Startup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SpeechKitApi/Utils/HttpClientExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/gRpcLinq2dbServer/DataSource/Connection/DataBaseConnection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SpeechKitApi/Attributes/EnumNameStringAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SpeechKitApi/Utils/Params.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -322,6 +322,7 @@
       <workItem from="1607327709138" duration="7662000" />
       <workItem from="1607408753684" duration="7300000" />
       <workItem from="1607436862589" duration="7024000" />
+      <workItem from="1607503202423" duration="3917000" />
     </task>
     <servers />
   </component>
@@ -468,10 +469,10 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state width="1288" height="548" key="XDebugger.FullValuePopup/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1601992768103" />
-    <state x="2553" y="0" width="840" height="1087" key="dock-window-1" timestamp="1607413932602">
+    <state x="2553" y="0" width="954" height="1087" key="dock-window-1" timestamp="1607503848550">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
-    <state x="2553" y="0" width="840" height="1087" key="dock-window-1/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1607413932602" />
+    <state x="2553" y="0" width="954" height="1087" key="dock-window-1/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1607503848550" />
     <state x="468" y="157" key="run.anything.popup" timestamp="1607439780195">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

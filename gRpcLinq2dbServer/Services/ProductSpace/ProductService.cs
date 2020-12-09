@@ -7,9 +7,14 @@ using gRpcLinq2dbServer.ProductSpace;
 using LinqToDB;
 using LinqToDB.Tools;
 using Microsoft.Extensions.Logging;
+using Product = gRpcLinq2dbServer.ProductSpace.Product;
+using CategoryModel = gRpcLinq2dbServer.DataSource.Models.Category;
+using ProductModel = gRpcLinq2dbServer.DataSource.Models.Product;
 
 namespace gRpcLinq2dbServer.Services.ProductSpace
 {
+    //ToDo: https://github.com/grpc/grpc-dotnet/blob/master/examples/Mailer/Server/Services/MailerService.cs
+    //ToDo: https://github.com/grpc/grpc/blob/v1.33.2/examples/csharp/RouteGuide/RouteGuideServer/RouteGuideImpl.cs
     public class ProductService: Product.ProductBase
     {
         private readonly ILogger<ProductService> _logger;
@@ -144,6 +149,40 @@ namespace gRpcLinq2dbServer.Services.ProductSpace
                         });
                 }                
             }
+        }
+
+        public override async Task<CountEntity> SetExtendedProductInfos(IAsyncStreamReader<ExtendedProductInfoEntity> requestStream, ServerCallContext context)
+        {
+            DataBaseConnection? dataConnection = null;
+            uint count = 0;
+            while (await requestStream.MoveNext(context.CancellationToken))
+            {
+                if (dataConnection == null &&
+                    (dataConnection = DataBaseConnection.GetConnection("linq2dbTest")) == null)
+                    continue;
+
+                var info = requestStream.Current;
+                await dataConnection.Categories.InsertOrUpdateAsync(
+                    () => new CategoryModel
+                    {
+                        Id = info.CategoryInfo.Id,
+                        Name = info.CategoryInfo.Name
+                    },
+                    t => new CategoryModel
+                    {
+                        Name = info.CategoryInfo.Name
+                    });
+                await dataConnection.InsertOrReplaceAsync(
+                    new ProductModel
+                    {
+                        Id = info.Id,
+                        Name = info.Name,
+                        CategoryId = info.CategoryInfo.Id
+                    });
+                count++;
+            }
+
+            return await Task.FromResult(new CountEntity{ Count = count});
         }
 
         private static ProductInfoEntity GetEmpty(ProductInfoIdentity request, string errorValue)
