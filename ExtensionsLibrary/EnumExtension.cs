@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace ExtensionsLibrary
 {
-    public static class EnumExtension {
+    public static partial class EnumExtension {
         /// <summary>
         /// Возвращает описание перечисления по значению
         /// </summary>

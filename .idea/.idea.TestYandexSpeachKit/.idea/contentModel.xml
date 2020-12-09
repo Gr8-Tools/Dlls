@@ -64,14 +64,36 @@
           <e p="Params.cs" t="Include" />
         </e>
       </e>
+      <e p="CodeGeneration" t="IncludeRecursive">
+        <e p="BaseGenerator.cs" t="Include" />
+        <e p="BaseGeneratorNode.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="CodeGeneration.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Utils" t="Include">
+          <e p="DefaultGenerationParams.cs" t="Include" />
+          <e p="InheritorEntities.cs" t="Include" />
+          <e p="InheritorInfo.cs" t="Include" />
+        </e>
+      </e>
       <e p="ExtensionsLibrary" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="EnumExtension.cs" t="Include" />
+        <e p="Enums" t="Include">
+          <e p="AccessModifier.cs" t="Include" />
+          <e p="AccessModifier.cs.meta" t="Include" />
+        </e>
         <e p="ExtensionsLibrary.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive" />
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />
         </e>
+        <e p="ReflectionExtensions.cs" t="Include" />
+        <e p="StringExtensions.cs" t="Include" />
+        <e p="TypeExtensions.cs" t="Include" />
       </e>
       <e p="gRpc" t="Include" />
       <e p="gRpcClientTest" t="IncludeRecursive">
@@ -378,6 +400,16 @@
           <e p="AssemblyInfo.cs" t="Include" />
         </e>
         <e p="TestYandexSpeechKit.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="TreeGraph" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Tree.cs" t="Include" />
+        <e p="TreeGraph.csproj" t="IncludeRecursive" />
+        <e p="TreeNode.cs" t="Include" />
       </e>
       <e p="TreeModule" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
