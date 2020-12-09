@@ -24,32 +24,21 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/gRpcLinq2dbServer/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/gRpcLinq2dbServer/Services/GreeterService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SpeechKitApi/Utils/FloatExtensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/gRpcLinq2dbServer/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SpeechKitApi/Models/SynthesisOptions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/gRpcLinq2dbServer/Startup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SpeechKitApi/Utils/HttpClientExtensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/gRpcLinq2dbServer/DataSource/Connection/DataBaseConnection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/gRpcLinq2dbServer/Services/GreeterService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/gRpcLinq2dbServer/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/gRpcLinq2dbServer/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/386D468C-F229-4878-A6E6-8C12A4DD1BC7/20F/LinqExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/gRpcLinq2dbServer/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/gRpcLinq2dbServer/DataSource/Connection/DataBaseConnection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SpeechKitApi/Attributes/EnumNameStringAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SpeechKitApi/Utils/Params.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Linq2DbTest/Operations/Connections/TestDataConnection.cs" />
-        <option value="$PROJECT_DIR$/LinqToDbApi/Extensions/DataConnectionExtensions.cs" />
-        <option value="$PROJECT_DIR$/Linq2DbTest/Models/ProductsSuppliers.cs" />
-        <option value="$PROJECT_DIR$/Linq2DbTest/Operations/Examples.cs" />
-        <option value="$PROJECT_DIR$/LinqToDbApi/Settings/Extensions/NativeConnectionStringSettingsOptionsExtensions.cs" />
-        <option value="$PROJECT_DIR$/LinqToDbApi/Settings/Utils/NativeConnectionStringSettingsOptionsData.cs" />
-        <option value="$PROJECT_DIR$/LinqToDbApi/Settings/Utils/ConnectionStringOptions/NativeConnectionStringSettingsOptions.cs" />
-        <option value="$PROJECT_DIR$/LinqToDbApi/Settings/Utils/NpgsqlConnectionTypes.cs" />
-        <option value="$PROJECT_DIR$/LinqToDbApi/Settings/Utils/NativeConnectionStringSettings.cs" />
-        <option value="$PROJECT_DIR$/LinqToDbApi/Settings/NativeConnectionSettings.cs" />
-        <option value="$PROJECT_DIR$/gRpcClientTest/Protos/greet.proto" />
         <option value="$PROJECT_DIR$/gRpcServerTest/Properties/launchSettings.json" />
         <option value="$PROJECT_DIR$/gRpcServerTest/Protos/customers.cs" />
         <option value="$PROJECT_DIR$/gRpcServerTest/Services/GreeterService.cs" />
@@ -90,6 +79,17 @@
         <option value="$PROJECT_DIR$/gRpcWithLinq2dbClient/Program.cs" />
         <option value="$PROJECT_DIR$/gRpcWithLinq2dbClient/ServiceControllers/ProductController.cs" />
         <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Services/ProductSpace/ProductService.cs" />
+        <option value="$PROJECT_DIR$/TreeGraph/Class1.cs" />
+        <option value="$PROJECT_DIR$/TreeGraph/Tree.cs" />
+        <option value="$PROJECT_DIR$/TreeGraph/TreeNode.cs" />
+        <option value="$PROJECT_DIR$/CodeGeneration/Class1.cs" />
+        <option value="$PROJECT_DIR$/CodeGeneration/Utils/DefaultGenerationParams.cs" />
+        <option value="$PROJECT_DIR$/CodeGeneration/BaseGenerator.cs" />
+        <option value="$PROJECT_DIR$/ExtensionsLibrary/ReflectionExtensions.cs" />
+        <option value="$PROJECT_DIR$/ExtensionsLibrary/EnumExtensions.cs" />
+        <option value="$PROJECT_DIR$/ExtensionsLibrary/EnumExtension.cs" />
+        <option value="$PROJECT_DIR$/ExtensionsLibrary/StringExtensions.cs" />
+        <option value="$PROJECT_DIR$/ExtensionsLibrary/TypeExtensions.cs" />
       </list>
     </option>
   </component>
@@ -324,6 +324,7 @@
       <workItem from="1607408753684" duration="7300000" />
       <workItem from="1607436862589" duration="7024000" />
       <workItem from="1607503202423" duration="11281000" />
+      <workItem from="1607518544577" duration="679000" />
     </task>
     <servers />
   </component>
@@ -450,11 +451,11 @@
     </state>
     <state width="2517" height="201" key="GridCell.Tab.4.right/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1607517407682" />
     <state width="2517" height="220" key="GridCell.Tab.4.right/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1606676114901" />
-    <state x="872" y="272" width="816" height="538" key="Rider.ProjectTemplateDialog.Size" timestamp="1606981935710">
+    <state x="872" y="272" width="816" height="538" key="Rider.ProjectTemplateDialog.Size" timestamp="1607518953302">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="257" y="251" width="816" height="538" key="Rider.ProjectTemplateDialog.Size/0.0.2560.1080/-2560.0.2560.1080@0.0.2560.1080" timestamp="1605530098773" />
-    <state x="872" y="272" key="Rider.ProjectTemplateDialog.Size/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1606981935710" />
+    <state x="872" y="272" key="Rider.ProjectTemplateDialog.Size/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1607518953302" />
     <state x="2895" y="185" key="Rider.ProjectTemplateDialog.Size/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1606847718931" />
     <state x="1152" y="223" key="RiderGenerateDialog" timestamp="1606928220863">
       <screen x="0" y="0" width="2560" height="1080" />
@@ -493,14 +494,7 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/gRpcLinq2dbServer/Services/ProductSpace/ProductService.cs</url>
           <line>155</line>
-          <properties documentPath="C:\Users\SplavOP\source\repos\TestYandexSpeachKit\gRpcLinq2dbServer\Services\ProductSpace\ProductService.cs" initialLine="155">
-            <startOffsets>
-              <option value="6492" />
-            </startOffsets>
-            <endOffsets>
-              <option value="6507" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\SplavOP\source\repos\TestYandexSpeachKit\gRpcLinq2dbServer\Services\ProductSpace\ProductService.cs" initialLine="155" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
