@@ -18,19 +18,20 @@ namespace gRpcLinq2dbServer.Services.ProductSpace
     public class ProductService: Product.ProductBase
     {
         private readonly ILogger<ProductService> _logger;
+        private  DataBaseConnection? _dataConnection;
 
         public ProductService(ILogger<ProductService> logger)
         {
             _logger = logger;
+            _dataConnection = DataBaseConnection.GetConnection("linq2dbTest");
         }
 
         public override Task<ProductInfoEntity> GetProductInfo(ProductInfoIdentity request, ServerCallContext context)
         {
-            var dataConnection = DataBaseConnection.GetConnection("linq2dbTest");
-            if (dataConnection == null)
+            if (_dataConnection == null && (_dataConnection = DataBaseConnection.GetConnection("linq2dbTest")) == null)
                 return Task.FromResult(GetEmpty(request, "<NO_CONNECTION>"));
 
-            var result = dataConnection.Products
+            var result = _dataConnection.Products
                 .SingleOrDefault(p => p.Id == request.Id);
             if(result == null)
                 return Task.FromResult(GetEmpty(request, "<NO_ENTITY>"));
@@ -44,11 +45,10 @@ namespace gRpcLinq2dbServer.Services.ProductSpace
         
         public override Task<ExtendedProductInfoEntity> GetExtendedProductInfo(ProductInfoIdentity request, ServerCallContext context)
         {
-            var dataConnection = DataBaseConnection.GetConnection("linq2dbTest");
-            if (dataConnection == null)
+            if (_dataConnection == null && (_dataConnection = DataBaseConnection.GetConnection("linq2dbTest")) == null)
                 return Task.FromResult(GetExtendedEmpty(request, "<NO_CONNECTION>"));
 
-            var result = dataConnection.Products
+            var result = _dataConnection.Products
                 .Where(p => p.Id == request.Id)
                 .LoadWith(p => p.CategoryIdfKey)
                 .SingleOrDefault();
@@ -74,12 +74,10 @@ namespace gRpcLinq2dbServer.Services.ProductSpace
         /// </summary>
         public override async Task GetProductInfos(IAsyncStreamReader<ProductInfoIdentity> requestStream, IServerStreamWriter<ProductInfoEntity> responseStream, ServerCallContext context)
         {
-            DataBaseConnection? dataConnection = null;
-            
             var list = new List<int>();
             while (await requestStream.MoveNext(context.CancellationToken))
             {
-                if (dataConnection == null && (dataConnection = DataBaseConnection.GetConnection("linq2dbTest")) == null)
+                if (_dataConnection == null && (_dataConnection = DataBaseConnection.GetConnection("linq2dbTest")) == null)
                 {
                     await responseStream.WriteAsync(GetEmpty(requestStream.Current, "<NO_CONNECTION>"));
                     continue;
@@ -88,11 +86,14 @@ namespace gRpcLinq2dbServer.Services.ProductSpace
                 list.Add(requestStream.Current.Id);
             }
 
+            if(!list.Any())
+                return;
+            
             list = list.Distinct().ToList();
-            var results = await dataConnection.Products
+            var results = await _dataConnection?.Products
                 .Where(p => p.Id.In(list.Distinct()))
                 .DefaultIfEmpty()
-                .ToListAsync(context.CancellationToken);
+                .ToListAsync(context.CancellationToken)! ?? new List<ProductModel>();
 
             var notFoundProducts = list
                 .Except(results.Select(r => r.Id))
@@ -120,16 +121,15 @@ namespace gRpcLinq2dbServer.Services.ProductSpace
         public override async Task GetExtendedProductInfos(IAsyncStreamReader<ProductInfoIdentity> requestStream, IServerStreamWriter<ExtendedProductInfoEntity> responseStream,
             ServerCallContext context)
         {
-            DataBaseConnection? dataConnection = null;
             while (await requestStream.MoveNext(context.CancellationToken))
             {
-                if (dataConnection == null && (dataConnection = DataBaseConnection.GetConnection("linq2dbTest")) == null)
+                if (_dataConnection == null && (_dataConnection = DataBaseConnection.GetConnection("linq2dbTest")) == null)
                 {
                     await responseStream.WriteAsync(GetExtendedEmpty(requestStream.Current, "<NO_CONNECTION>"));
                 }
                 else
                 {
-                    var result = dataConnection.Products
+                    var result = _dataConnection.Products
                         .Where(p => p.Id == requestStream.Current.Id)
                         .LoadWith(p => p.CategoryIdfKey)
                         .SingleOrDefault();
@@ -153,36 +153,39 @@ namespace gRpcLinq2dbServer.Services.ProductSpace
 
         public override async Task<CountEntity> SetExtendedProductInfos(IAsyncStreamReader<ExtendedProductInfoEntity> requestStream, ServerCallContext context)
         {
-            DataBaseConnection? dataConnection = null;
             uint count = 0;
-            while (await requestStream.MoveNext(context.CancellationToken))
+            while (await requestStream.MoveNext())
             {
-                if (dataConnection == null &&
-                    (dataConnection = DataBaseConnection.GetConnection("linq2dbTest")) == null)
+                if (_dataConnection == null && (_dataConnection = DataBaseConnection.GetConnection("linq2dbTest")) == null)
                     continue;
 
                 var info = requestStream.Current;
-                await dataConnection.Categories.InsertOrUpdateAsync(
+                _dataConnection.Categories.InsertOrUpdate(
                     () => new CategoryModel
                     {
                         Id = info.CategoryInfo.Id,
                         Name = info.CategoryInfo.Name
                     },
-                    t => new CategoryModel
+                    c => new CategoryModel
                     {
                         Name = info.CategoryInfo.Name
                     });
-                await dataConnection.InsertOrReplaceAsync(
-                    new ProductModel
+                _dataConnection.Products.InsertOrUpdate(
+                    () => new ProductModel
                     {
                         Id = info.Id,
+                        Name = info.Name,
+                        CategoryId = info.CategoryInfo.Id
+                    },
+                    p => new ProductModel
+                    {
                         Name = info.Name,
                         CategoryId = info.CategoryInfo.Id
                     });
                 count++;
             }
 
-            return await Task.FromResult(new CountEntity{ Count = count});
+            return new CountEntity{ Count = count};
         }
 
         private static ProductInfoEntity GetEmpty(ProductInfoIdentity request, string errorValue)

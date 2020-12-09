@@ -36,7 +36,7 @@ namespace gRpcWithLinq2dbClient
             switch (commandParts[0])
             {
                 case "p":
-                    return ProductController.TranslateCommand(in commandParts);
+                    return ProductController.Instance.TranslateCommand(in commandParts);
             }
             
             return false;
