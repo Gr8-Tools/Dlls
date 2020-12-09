@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+option csharp_namespace = "gRpcLinq2dbServer.ProductSpace";
+
+package map_product_supplier;
+
+import "base_replies.proto";
+import "ProductSpace/products.proto";
+import "ProductSpace/suppliers.proto";
+
+service MapProductSupplier {
+  rpc GetProductSupplierInfo (ProductSupplierInfoIdentity) returns (ProductSupplierInfoEntity);
+  rpc GetProductSupplierInfos (stream ProductSupplierInfoIdentity) returns (stream ProductSupplierInfoEntity);  
+  
+  rpc GetExtendedProductSupplierInfo (ProductSupplierInfoIdentity) returns (ExtendedProductSupplierInfoEntity);
+  rpc GetExtendedProductSupplierInfos (stream ProductSupplierInfoIdentity) returns (stream ExtendedProductSupplierInfoEntity);
+  
+  rpc SetProductSupplierInfos (stream ProductSupplierInfoIdentity) returns (base_replies.CountEntity);
+}
+
+message ProductSupplierInfoIdentity {
+  sint32 product_id = 1;
+  sint32 supplier_id = 2;
+}
+
+message ProductSupplierInfoEntity {
+  products.ProductInfoEntity product_info = 1;
+  suppliers.SupplierInfoEntity supplier_info = 2;
+}
+
+message ExtendedProductSupplierInfoEntity {
+  products.ExtendedProductInfoEntity product_info = 1;
+  suppliers.ExtendedSupplierInfoEntity supplier_info = 2;
+}

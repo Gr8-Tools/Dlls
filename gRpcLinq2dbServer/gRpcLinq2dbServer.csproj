@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grpc.AspNetCore" Version="2.34.0-pre1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LinqToDbApi\LinqToDbApi.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="Protos\base_replies.proto" ProtoRoot="Protos\" GrpcServices="Server" />
+    <Protobuf Include="Protos\greet.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\ProductSpace\categories.proto" ProtoRoot="Protos\" GrpcServices="Server" />
+    <Protobuf Include="Protos\ProductSpace\cities.proto" ProtoRoot="Protos\" GrpcServices="Server" />
+    <Protobuf Include="Protos\ProductSpace\map_product_supplier.proto" ProtoRoot="Protos\" GrpcServices="Server" />
+    <Protobuf Include="Protos\ProductSpace\products.proto" ProtoRoot="Protos\" GrpcServices="Server" />
+    <Protobuf Include="Protos\ProductSpace\suppliers.proto" ProtoRoot="Protos\" GrpcServices="Server" />
+  </ItemGroup>
+	
+</Project>

@@ -4,6 +4,11 @@
     <projectFile>TestYandexSpeachKit/TestYandexSpeachKit.csproj</projectFile>
     <projectFile>TestYandexSpeechKit/TestYandexSpeechKit.csproj</projectFile>
     <projectFile>Linq2DbTest/Linq2DbTest.csproj</projectFile>
+    <projectFile>gRpcTest/gRpcTest.csproj</projectFile>
+    <projectFile>gRpcServerTest/gRpcServerTest.csproj</projectFile>
+    <projectFile>gRpcClientTest/gRpcClientTest.csproj</projectFile>
+    <projectFile>gRpcLinq2dbServer/gRpcLinq2dbServer.csproj</projectFile>
+    <projectFile>gRpcWithLinq2dbClient/gRpcWithLinq2dbClient.csproj</projectFile>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
@@ -15,86 +20,25 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/gRpcLinq2dbServer/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/gRpcLinq2dbServer/Services/GreeterService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SpeechKitApi/Utils/FloatExtensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/386D468C-F229-4878-A6E6-8C12A4DD1BC7/9a/c01e986c/ColumnDescriptor.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/12E2557B-74F8-4960-ABFA-371D315A3138/b3/f8313633/Configuration.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/386D468C-F229-4878-A6E6-8C12A4DD1BC7/75/03022095/BulkCopyOptions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/63DD8BF9-8CFA-4BA9-85AF-735EF1A56BA9/97/940c20ed/Object.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/464CF9A0-0D73-4699-B018-F062D1BC2004/5a/22560bb8/PemReader.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/386D468C-F229-4878-A6E6-8C12A4DD1BC7/ed/1db5afb2/ITable`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/386D468C-F229-4878-A6E6-8C12A4DD1BC7/C9/ForeignKeyInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/A9C37662-579A-499A-A4DE-B3C85349280D/D3/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/386D468C-F229-4878-A6E6-8C12A4DD1BC7/62/ForeignKeySchema.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/35909858-3A4E-483A-954D-61928307F2A4/44/Set.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/35909858-3A4E-483A-954D-61928307F2A4/18/Except.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0D18E9E4-878A-4081-A336-A61538DC57A0/ee/7472a6d6/TextReader.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/386D468C-F229-4878-A6E6-8C12A4DD1BC7/10A/DataConnection.Linq.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/A9C37662-579A-499A-A4DE-B3C85349280D/1E0/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/386D468C-F229-4878-A6E6-8C12A4DD1BC7/B2/TempTable.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/386D468C-F229-4878-A6E6-8C12A4DD1BC7/259/Query.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3E4100C5-0380-40BA-A2BA-66BB8A76E424/9c/c924ad36/FileDialog.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/386D468C-F229-4878-A6E6-8C12A4DD1BC7/ae/a401ec26/LinqExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/386D468C-F229-4878-A6E6-8C12A4DD1BC7/1C1/DataConnection.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SpeechKitApi/Utils/HttpClientExtensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0D18E9E4-878A-4081-A336-A61538DC57A0/ca/89ccb9b5/__Error.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/401BB0E3-FFF2-41AB-9478-75D8D72F610A/46/5d6c0eda/HttpClient.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0D18E9E4-878A-4081-A336-A61538DC57A0/a8/212ee5db/FileStream.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/50FE65A4-93A0-4952-84F1-E3562EFBE38D/d2/5baba4b1/Path.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SpeechKitApi/Attributes/EnumNameStringAttribute.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0D18E9E4-878A-4081-A336-A61538DC57A0/dd/ec92c516/String.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0D18E9E4-878A-4081-A336-A61538DC57A0/cb/e60da67b/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/gRpcLinq2dbServer/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SpeechKitApi/Models/SynthesisOptions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/386D468C-F229-4878-A6E6-8C12A4DD1BC7/107/ConvertFromDataReaderExpression.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/386D468C-F229-4878-A6E6-8C12A4DD1BC7/f5/47c2eec9/InsertOrUpdateColumnFilter`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5DE66FF1-1FCB-4513-8463-255B392B032B/ac/3e7a5542/ThreadState.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/386D468C-F229-4878-A6E6-8C12A4DD1BC7/37/QueryRunner.InsertOrReplace.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/386D468C-F229-4878-A6E6-8C12A4DD1BC7/39/225bf87f/ColumnAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/gRpcLinq2dbServer/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SpeechKitApi/Utils/HttpClientExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/gRpcLinq2dbServer/DataSource/Connection/DataBaseConnection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/386D468C-F229-4878-A6E6-8C12A4DD1BC7/20F/LinqExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SpeechKitApi/Attributes/EnumNameStringAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SpeechKitApi/Utils/Params.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/AsyncClientServer/BaseNetworkManager.cs" />
-        <option value="$PROJECT_DIR$/AsyncClientServer/Message/Types/Utils/MessageTypeInfo.cs" />
-        <option value="$PROJECT_DIR$/AsyncClientServer/Message/Types/MessageTypeManager.cs" />
-        <option value="$PROJECT_DIR$/AsyncClientServer/INetworkManager.cs" />
-        <option value="$PROJECT_DIR$/AsyncClientServer/INetworkHelper.cs" />
-        <option value="$PROJECT_DIR$/AsyncClientServer/SerializeManager.cs" />
-        <option value="$PROJECT_DIR$/AsyncClientServer/Utils/Extensions/MessageExtensions.cs" />
-        <option value="$PROJECT_DIR$/AsyncClientServer/Server/AsynchronousServer.cs" />
-        <option value="$PROJECT_DIR$/AsyncClientServer/Client/AsynchronousClient.cs" />
-        <option value="$PROJECT_DIR$/TestYandexSpeechKit/ClientParams.cs" />
-        <option value="$PROJECT_DIR$/UnityAsyncHelper/Core/ThreadManager.cs" />
-        <option value="$PROJECT_DIR$/LinqToDbApi/Class1.cs" />
-        <option value="$PROJECT_DIR$/LinqToDbApi/Connection/Utils/IAutoGenerate.cs" />
-        <option value="$PROJECT_DIR$/LinqToDbApi/Settings/Utils/ConnectionStringOptions/CommandTimeoutNativeConnectionStringSettingsOptions.cs" />
-        <option value="$PROJECT_DIR$/LinqToDbApi/Settings/Utils/ConnectionStringOptions/ConnectionTimeoutNativeConnectionStringSettingsOptions.cs" />
-        <option value="$PROJECT_DIR$/LinqToDbApi/Settings/Utils/ConnectionStringOptions/ControllingPoolNativeConnectionStringSettingsOptions.cs" />
-        <option value="$PROJECT_DIR$/LinqToDbApi/Settings/Utils/ConnectionStringOptions/ProtocolNativeConnectionStringSettingsOptions.cs" />
-        <option value="$PROJECT_DIR$/LinqToDbApi/Settings/Utils/ConnectionStringOptions/SslActiveNativeConnectionStringSettingsOptions.cs" />
-        <option value="$PROJECT_DIR$/LinqToDbApi/Settings/Utils/ConnectionStringOptions/SslDisabledNativeConnectionStringSettingsOptions.cs" />
-        <option value="$PROJECT_DIR$/LinqToDbApi/Settings/Utils/ConnectionStringOptions/StandardNativeConnectionStringSettingsOptions.cs" />
-        <option value="$PROJECT_DIR$/LinqToDbApi/Settings/Utils/ConnectionStringOptions/WindowsSecurityNativeConnectionStringSettingsOptions.cs" />
-        <option value="$PROJECT_DIR$/LinqToDbApi/Settings/ConnectionConfigSettings.cs" />
-        <option value="$PROJECT_DIR$/Linq2DbTest/Settings/TestConnectionSettings.cs" />
-        <option value="$PROJECT_DIR$/Linq2DbTest/app.config" />
-        <option value="$PROJECT_DIR$/LinqToDbApi/Extensions/TableAttributeExtensions.cs" />
-        <option value="$PROJECT_DIR$/LinqToDbApi/Extensions/ColumnAttributeExtensions.cs" />
-        <option value="$PROJECT_DIR$/LinqToDbApi/Models/Utils/TableInfo.cs" />
-        <option value="$PROJECT_DIR$/LinqToDbApi/Models/Utils/ColumnInfo.cs" />
-        <option value="$PROJECT_DIR$/LinqToDbApi/Connection/BaseDataConnection.cs" />
-        <option value="$PROJECT_DIR$/Linq2DbTest/Models/Examples/LeftJoinProduct.cs" />
-        <option value="$PROJECT_DIR$/Linq2DbTest/Models/Category.cs" />
-        <option value="$PROJECT_DIR$/Linq2DbTest/Models/Product.cs" />
-        <option value="$PROJECT_DIR$/Linq2DbTest/Models/Examples/JoinProduct.cs" />
-        <option value="$PROJECT_DIR$/Linq2DbTest/Examples.cs" />
-        <option value="$PROJECT_DIR$/Linq2DbTest/Settings/EmployeeExamples.cs" />
-        <option value="$PROJECT_DIR$/Linq2DbTest/Models/Employee.cs" />
-        <option value="$PROJECT_DIR$/Linq2DbTest/Settings/CteExamples.cs" />
-        <option value="$PROJECT_DIR$/Linq2DbTest/Models/Suplier.cs" />
-        <option value="$PROJECT_DIR$/Linq2DbTest/Models/Supplier.cs" />
-        <option value="$PROJECT_DIR$/Linq2DbTest/Models/City.cs" />
         <option value="$PROJECT_DIR$/Linq2DbTest/Operations/Connections/TestDataConnection.cs" />
         <option value="$PROJECT_DIR$/LinqToDbApi/Extensions/DataConnectionExtensions.cs" />
         <option value="$PROJECT_DIR$/Linq2DbTest/Models/ProductsSuppliers.cs" />
@@ -105,7 +49,47 @@
         <option value="$PROJECT_DIR$/LinqToDbApi/Settings/Utils/NpgsqlConnectionTypes.cs" />
         <option value="$PROJECT_DIR$/LinqToDbApi/Settings/Utils/NativeConnectionStringSettings.cs" />
         <option value="$PROJECT_DIR$/LinqToDbApi/Settings/NativeConnectionSettings.cs" />
+        <option value="$PROJECT_DIR$/gRpcClientTest/Protos/greet.proto" />
+        <option value="$PROJECT_DIR$/gRpcServerTest/Properties/launchSettings.json" />
+        <option value="$PROJECT_DIR$/gRpcServerTest/Protos/customers.cs" />
+        <option value="$PROJECT_DIR$/gRpcServerTest/Services/GreeterService.cs" />
+        <option value="$PROJECT_DIR$/gRpcServerTest/Services/CustomerService.cs" />
+        <option value="$PROJECT_DIR$/gRpcServerTest/Startup.cs" />
+        <option value="$PROJECT_DIR$/gRpcServerTest/Protos/customers.proto" />
+        <option value="$PROJECT_DIR$/gRpcServerTest/Services/CustomersService.cs" />
+        <option value="$PROJECT_DIR$/gRpcClientTest/Program.cs" />
+        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/DataSource/Connection/TestDataConnection.cs" />
+        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/DataSource/Models/Employee.cs" />
+        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/DataSource/Models/Category.cs" />
+        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/DataSource/Models/City.cs" />
+        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/DataSource/Models/Product.cs" />
+        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/DataSource/Models/ProductsSuppliers.cs" />
+        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/DataSource/Models/Supplier.cs" />
+        <option value="$PROJECT_DIR$/gRpcClientTest/Protos/customers.proto" />
+        <option value="$PROJECT_DIR$/gRpcClientTest/gRpcClientTest.csproj" />
+        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/appsettings.Development.json" />
+        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Services/ProductSpace/ProductsService.cs" />
+        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Protos/ProductSpace/products_suppliers.proto" />
+        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Protos/database.proto" />
+        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Services/GreeterService.cs" />
+        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Protos/base_replies.proto" />
+        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/gRpcLinq2dbServer.csproj" />
+        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Services/ProdcutSpace/ProductService.cs" />
+        <option value="$PROJECT_DIR$/LinqToDbApi/Connection/BaseDataConnection.cs" />
         <option value="$PROJECT_DIR$/Linq2DbTest/Program.cs" />
+        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/DataSource/Connection/ConnectionSettings.cs" />
+        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Startup.cs" />
+        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/DataSource/Connection/DataBaseConnection.cs" />
+        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Protos/ProductSpace/products.proto" />
+        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Protos/ProductSpace/categories.proto" />
+        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Protos/ProductSpace/suppliers.proto" />
+        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Protos/ProductSpace/cities.proto" />
+        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Protos/ProductSpace/map_product_supplier.proto" />
+        <option value="$PROJECT_DIR$/gRpcWithLinq2dbClient/gRpcWithLinq2dbClient.csproj" />
+        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Program.cs" />
+        <option value="$PROJECT_DIR$/gRpcWithLinq2dbClient/Program.cs" />
+        <option value="$PROJECT_DIR$/gRpcWithLinq2dbClient/ServiceControllers/ProductController.cs" />
+        <option value="$PROJECT_DIR$/gRpcLinq2dbServer/Services/ProductSpace/ProductService.cs" />
       </list>
     </option>
   </component>
@@ -123,7 +107,7 @@
     <property name="settings.editor.selected.configurable" value="ReSpellerSettingsId" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Project.Linq2DbTest">
+  <component name="RunManager" selected=".NET Launch Settings Profile.gRpcLinq2dbServer">
     <configuration name="Linq2DbTest" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -142,7 +126,7 @@
         <option name="Build" />
       </method>
     </configuration>
-    <configuration name="TestYandexSpeechKit (1)" type="DotNetProject" factoryName=".NET Project" temporary="true">
+    <configuration name="TestYandexSpeechKit (1)" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/TestYandexSpeechKit/bin/Debug/TestYandexSpeechKit.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TestYandexSpeechKit/bin/Debug" />
@@ -196,6 +180,87 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="gRpcClientTest" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/gRpcClientTest/gRpcClientTest.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="gRpcWithLinq2dbClient" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/gRpcWithLinq2dbClient/gRpcWithLinq2dbClient.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="gRpcLinq2dbServer" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/gRpcLinq2dbServer/gRpcLinq2dbServer.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
+      <option name="LAUNCH_PROFILE_NAME" value="gRpcLinq2dbServer" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="gRpcServerTest" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/gRpcServerTest/gRpcServerTest.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
+      <option name="LAUNCH_PROFILE_NAME" value="gRpcServerTest" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="gRpcTest" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/gRpcServerTest/gRpcServerTest.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
+      <option name="LAUNCH_PROFILE_NAME" value="gRpcTest" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -214,11 +279,6 @@
       </option>
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue=".NET Project.TestYandexSpeechKit (1)" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -254,6 +314,16 @@
       <workItem from="1606381704383" duration="26941000" />
       <workItem from="1606455562326" duration="20074000" />
       <workItem from="1606539908575" duration="55817000" />
+      <workItem from="1606844682517" duration="566000" />
+      <workItem from="1606845576336" duration="4593000" />
+      <workItem from="1606896947757" duration="823000" />
+      <workItem from="1606898046042" duration="23251000" />
+      <workItem from="1606998447595" duration="4113000" />
+      <workItem from="1607002804687" duration="110000" />
+      <workItem from="1607327709138" duration="7662000" />
+      <workItem from="1607408753684" duration="7300000" />
+      <workItem from="1607436862589" duration="7024000" />
+      <workItem from="1607503202423" duration="11281000" />
     </task>
     <servers />
   </component>
@@ -266,6 +336,11 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="734" y="195" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606898644406">
+      <screen x="0" y="0" width="2560" height="1080" />
+    </state>
+    <state x="734" y="195" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1606898644406" />
+    <state x="3294" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1606847519741" />
     <state x="1035" y="244" width="1181" height="592" key="#xdebugger.evaluate" timestamp="1601990004834">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
@@ -275,117 +350,117 @@
     </state>
     <state width="763" height="464" key="DebuggerActiveHint/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1606843006913" />
     <state width="491" height="464" key="DebuggerActiveHint/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1606570585889" />
-    <state width="2517" height="485" key="GridCell.Tab.0.bottom" timestamp="1606842822044">
+    <state width="2517" height="201" key="GridCell.Tab.0.bottom" timestamp="1607517407682">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="485" key="GridCell.Tab.0.bottom/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1606842822044" />
-    <state width="2517" height="220" key="GridCell.Tab.0.bottom/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1606676115050" />
-    <state width="2517" height="485" key="GridCell.Tab.0.center" timestamp="1606842822043">
+    <state width="2517" height="201" key="GridCell.Tab.0.bottom/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1607517407682" />
+    <state width="2517" height="312" key="GridCell.Tab.0.bottom/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1606847743422" />
+    <state width="2517" height="201" key="GridCell.Tab.0.center" timestamp="1607517407682">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="485" key="GridCell.Tab.0.center/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1606842822043" />
-    <state width="2517" height="220" key="GridCell.Tab.0.center/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1606676115050" />
-    <state width="2517" height="485" key="GridCell.Tab.0.left" timestamp="1606842822043">
+    <state width="2517" height="201" key="GridCell.Tab.0.center/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1607517407682" />
+    <state width="2517" height="312" key="GridCell.Tab.0.center/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1606847743422" />
+    <state width="2517" height="201" key="GridCell.Tab.0.left" timestamp="1607517407681">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="485" key="GridCell.Tab.0.left/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1606842822043" />
-    <state width="2517" height="220" key="GridCell.Tab.0.left/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1606676115050" />
-    <state width="2517" height="485" key="GridCell.Tab.0.right" timestamp="1606842822043">
+    <state width="2517" height="201" key="GridCell.Tab.0.left/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1607517407681" />
+    <state width="2517" height="312" key="GridCell.Tab.0.left/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1606847743422" />
+    <state width="2517" height="201" key="GridCell.Tab.0.right" timestamp="1607517407682">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="485" key="GridCell.Tab.0.right/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1606842822043" />
-    <state width="2517" height="220" key="GridCell.Tab.0.right/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1606676115050" />
-    <state width="2517" height="485" key="GridCell.Tab.1.bottom" timestamp="1606842822322">
+    <state width="2517" height="201" key="GridCell.Tab.0.right/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1607517407682" />
+    <state width="2517" height="312" key="GridCell.Tab.0.right/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1606847743422" />
+    <state width="2517" height="582" key="GridCell.Tab.1.bottom" timestamp="1607517484972">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="485" key="GridCell.Tab.1.bottom/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1606842822322" />
+    <state width="2517" height="582" key="GridCell.Tab.1.bottom/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1607517484972" />
     <state width="2517" height="220" key="GridCell.Tab.1.bottom/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1606676114901" />
-    <state width="2517" height="485" key="GridCell.Tab.1.center" timestamp="1606842822322">
+    <state width="2517" height="582" key="GridCell.Tab.1.center" timestamp="1607517484972">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="485" key="GridCell.Tab.1.center/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1606842822322" />
+    <state width="2517" height="582" key="GridCell.Tab.1.center/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1607517484972" />
     <state width="2517" height="220" key="GridCell.Tab.1.center/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1606676114901" />
-    <state width="2517" height="485" key="GridCell.Tab.1.left" timestamp="1606842822322">
+    <state width="2517" height="582" key="GridCell.Tab.1.left" timestamp="1607517484972">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="485" key="GridCell.Tab.1.left/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1606842822322" />
+    <state width="2517" height="582" key="GridCell.Tab.1.left/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1607517484972" />
     <state width="2517" height="220" key="GridCell.Tab.1.left/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1606676114901" />
-    <state width="2517" height="485" key="GridCell.Tab.1.right" timestamp="1606842822322">
+    <state width="2517" height="582" key="GridCell.Tab.1.right" timestamp="1607517484972">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="485" key="GridCell.Tab.1.right/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1606842822322" />
+    <state width="2517" height="582" key="GridCell.Tab.1.right/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1607517484972" />
     <state width="2517" height="220" key="GridCell.Tab.1.right/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1606676114901" />
-    <state width="2517" height="485" key="GridCell.Tab.2.bottom" timestamp="1606842821900">
+    <state width="2517" height="201" key="GridCell.Tab.2.bottom" timestamp="1607517407682">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="485" key="GridCell.Tab.2.bottom/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1606842821900" />
+    <state width="2517" height="201" key="GridCell.Tab.2.bottom/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1607517407682" />
     <state width="2517" height="220" key="GridCell.Tab.2.bottom/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1606676114901" />
-    <state width="2517" height="485" key="GridCell.Tab.2.center" timestamp="1606842821900">
+    <state width="2517" height="201" key="GridCell.Tab.2.center" timestamp="1607517407682">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="485" key="GridCell.Tab.2.center/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1606842821900" />
+    <state width="2517" height="201" key="GridCell.Tab.2.center/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1607517407682" />
     <state width="2517" height="220" key="GridCell.Tab.2.center/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1606676114901" />
-    <state width="2517" height="485" key="GridCell.Tab.2.left" timestamp="1606842821900">
+    <state width="2517" height="201" key="GridCell.Tab.2.left" timestamp="1607517407682">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="485" key="GridCell.Tab.2.left/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1606842821900" />
+    <state width="2517" height="201" key="GridCell.Tab.2.left/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1607517407682" />
     <state width="2517" height="220" key="GridCell.Tab.2.left/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1606676114901" />
-    <state width="2517" height="485" key="GridCell.Tab.2.right" timestamp="1606842821900">
+    <state width="2517" height="201" key="GridCell.Tab.2.right" timestamp="1607517407682">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="485" key="GridCell.Tab.2.right/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1606842821900" />
+    <state width="2517" height="201" key="GridCell.Tab.2.right/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1607517407682" />
     <state width="2517" height="220" key="GridCell.Tab.2.right/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1606676114901" />
-    <state width="2517" height="485" key="GridCell.Tab.3.bottom" timestamp="1606842821900">
+    <state width="2517" height="201" key="GridCell.Tab.3.bottom" timestamp="1607517407682">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="485" key="GridCell.Tab.3.bottom/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1606842821900" />
+    <state width="2517" height="201" key="GridCell.Tab.3.bottom/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1607517407682" />
     <state width="2517" height="220" key="GridCell.Tab.3.bottom/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1606676114901" />
-    <state width="2517" height="485" key="GridCell.Tab.3.center" timestamp="1606842821900">
+    <state width="2517" height="201" key="GridCell.Tab.3.center" timestamp="1607517407682">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="485" key="GridCell.Tab.3.center/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1606842821900" />
+    <state width="2517" height="201" key="GridCell.Tab.3.center/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1607517407682" />
     <state width="2517" height="220" key="GridCell.Tab.3.center/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1606676114901" />
-    <state width="2517" height="485" key="GridCell.Tab.3.left" timestamp="1606842821900">
+    <state width="2517" height="201" key="GridCell.Tab.3.left" timestamp="1607517407682">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="485" key="GridCell.Tab.3.left/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1606842821900" />
+    <state width="2517" height="201" key="GridCell.Tab.3.left/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1607517407682" />
     <state width="2517" height="220" key="GridCell.Tab.3.left/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1606676114901" />
-    <state width="2517" height="485" key="GridCell.Tab.3.right" timestamp="1606842821900">
+    <state width="2517" height="201" key="GridCell.Tab.3.right" timestamp="1607517407682">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="485" key="GridCell.Tab.3.right/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1606842821900" />
+    <state width="2517" height="201" key="GridCell.Tab.3.right/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1607517407682" />
     <state width="2517" height="220" key="GridCell.Tab.3.right/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1606676114901" />
-    <state width="2517" height="485" key="GridCell.Tab.4.bottom" timestamp="1606842821900">
+    <state width="2517" height="201" key="GridCell.Tab.4.bottom" timestamp="1607517407682">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="485" key="GridCell.Tab.4.bottom/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1606842821900" />
+    <state width="2517" height="201" key="GridCell.Tab.4.bottom/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1607517407682" />
     <state width="2517" height="220" key="GridCell.Tab.4.bottom/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1606676114901" />
-    <state width="2517" height="485" key="GridCell.Tab.4.center" timestamp="1606842821900">
+    <state width="2517" height="201" key="GridCell.Tab.4.center" timestamp="1607517407682">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="485" key="GridCell.Tab.4.center/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1606842821900" />
+    <state width="2517" height="201" key="GridCell.Tab.4.center/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1607517407682" />
     <state width="2517" height="220" key="GridCell.Tab.4.center/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1606676114901" />
-    <state width="2517" height="485" key="GridCell.Tab.4.left" timestamp="1606842821900">
+    <state width="2517" height="201" key="GridCell.Tab.4.left" timestamp="1607517407682">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="485" key="GridCell.Tab.4.left/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1606842821900" />
+    <state width="2517" height="201" key="GridCell.Tab.4.left/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1607517407682" />
     <state width="2517" height="220" key="GridCell.Tab.4.left/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1606676114901" />
-    <state width="2517" height="485" key="GridCell.Tab.4.right" timestamp="1606842821900">
+    <state width="2517" height="201" key="GridCell.Tab.4.right" timestamp="1607517407682">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="485" key="GridCell.Tab.4.right/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1606842821900" />
+    <state width="2517" height="201" key="GridCell.Tab.4.right/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1607517407682" />
     <state width="2517" height="220" key="GridCell.Tab.4.right/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1606676114901" />
-    <state x="2895" y="185" width="816" height="538" key="Rider.ProjectTemplateDialog.Size" timestamp="1606382840379">
-      <screen x="2560" y="0" width="2560" height="1080" />
+    <state x="872" y="272" width="816" height="538" key="Rider.ProjectTemplateDialog.Size" timestamp="1606981935710">
+      <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="257" y="251" width="816" height="538" key="Rider.ProjectTemplateDialog.Size/0.0.2560.1080/-2560.0.2560.1080@0.0.2560.1080" timestamp="1605530098773" />
-    <state x="872" y="272" key="Rider.ProjectTemplateDialog.Size/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1602136196201" />
-    <state x="2895" y="185" key="Rider.ProjectTemplateDialog.Size/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1606382840379" />
-    <state x="1152" y="223" key="RiderGenerateDialog" timestamp="1606405777047">
+    <state x="872" y="272" key="Rider.ProjectTemplateDialog.Size/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1606981935710" />
+    <state x="2895" y="185" key="Rider.ProjectTemplateDialog.Size/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1606847718931" />
+    <state x="1152" y="223" key="RiderGenerateDialog" timestamp="1606928220863">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="1152" y="223" key="RiderGenerateDialog/0.0.2560.1080/-2560.0.2560.1080@0.0.2560.1080" timestamp="1605533629912" />
-    <state x="1152" y="223" key="RiderGenerateDialog/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1606405777047" />
+    <state x="1152" y="223" key="RiderGenerateDialog/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1606928220863" />
     <state x="3712" y="223" key="RiderGenerateDialog/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1603620128782" />
     <state x="781" y="185" key="SettingsEditor" timestamp="1601967756390">
       <screen x="0" y="0" width="2560" height="1080" />
@@ -395,10 +470,15 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state width="1288" height="548" key="XDebugger.FullValuePopup/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1601992768103" />
-    <state x="936" y="250" key="run.anything.popup" timestamp="1606833248264">
-      <screen x="0" y="0" width="2560" height="1080" />
+    <state x="2553" y="0" width="954" height="1087" key="dock-window-1" timestamp="1607503848550">
+      <screen x="2560" y="0" width="2560" height="1080" />
     </state>
-    <state x="936" y="250" key="run.anything.popup/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1606833248264" />
+    <state x="2553" y="0" width="954" height="1087" key="dock-window-1/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1607503848550" />
+    <state x="468" y="157" key="run.anything.popup" timestamp="1607439780195">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="468" y="157" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1607439780195" />
+    <state x="936" y="250" key="run.anything.popup/0.0.2560.1080/2560.0.2560.1080@0.0.2560.1080" timestamp="1607002171752" />
     <state x="3496" y="250" key="run.anything.popup/0.0.2560.1080/2560.0.2560.1080@2560.0.2560.1080" timestamp="1606570554226" />
     <state x="943" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1606726224167">
       <screen x="0" y="0" width="2560" height="1080" />
@@ -411,17 +491,17 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Linq2DbTest/Program.cs</url>
-          <line>48</line>
-          <properties documentPath="C:\Users\SplavOP\source\repos\TestYandexSpeachKit\Linq2DbTest\Program.cs" initialLine="48">
+          <url>file://$PROJECT_DIR$/gRpcLinq2dbServer/Services/ProductSpace/ProductService.cs</url>
+          <line>155</line>
+          <properties documentPath="C:\Users\SplavOP\source\repos\TestYandexSpeachKit\gRpcLinq2dbServer\Services\ProductSpace\ProductService.cs" initialLine="155">
             <startOffsets>
-              <option value="1692" />
+              <option value="6492" />
             </startOffsets>
             <endOffsets>
-              <option value="1721" />
+              <option value="6507" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="9" />
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option csharp_namespace = "gRpcLinq2dbServer.ProductSpace";
+
+import "base_replies.proto";
+package cities;
+
+service City {
+  rpc GetCityInfo (CityInfoIdentity) returns (CityInfoEntity);
+  rpc GetCityInfos (stream CityInfoIdentity) returns (stream CityInfoEntity);
+
+  rpc SetCityInfos (stream CityInfoEntity) returns (base_replies.CountEntity);
+}
+
+message CityInfoIdentity {
+  sint32 id = 1;
+}
+
+message CityInfoEntity {
+  sint32 id = 1;
+  string name = 2;
+}

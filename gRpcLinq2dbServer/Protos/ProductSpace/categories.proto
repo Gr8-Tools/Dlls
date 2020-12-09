@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option csharp_namespace = "gRpcLinq2dbServer.ProductSpace";
+
+import "base_replies.proto";
+
+package categories;
+
+service Category {
+  rpc GetCategoryInfo (CategoryInfoIdentity) returns (CategoryInfoEntity);
+  rpc GetCategoryInfos (stream CategoryInfoIdentity) returns (stream CategoryInfoEntity); 
+  
+  rpc SetCategoryInfos (stream CategoryInfoIdentity) returns (base_replies.CountEntity);
+}
+
+message CategoryInfoIdentity {
+  sint32 id = 1;
+}
+
+message CategoryInfoEntity {
+  sint32 id = 1;
+  string name = 2;
+}

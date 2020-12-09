@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "gRpcLinq2dbServer";
+
+package base_replies;
+
+service BaseReplier {
+}
+
+message CountEntity{
+  uint32 count = 1;
+}

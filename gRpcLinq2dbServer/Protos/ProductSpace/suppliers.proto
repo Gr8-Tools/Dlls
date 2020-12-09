@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+option csharp_namespace = "gRpcLinq2dbServer.ProductSpace";
+
+package suppliers;
+
+import "base_replies.proto";
+import "ProductSpace/cities.proto";
+
+service Supplier {
+  rpc GetSupplierInfo (SupplierInfoIdentity) returns (SupplierInfoEntity);
+  rpc GetSupplierInfos (stream SupplierInfoIdentity) returns (stream SupplierInfoEntity);  
+  
+  rpc GetExtendedSupplierInfo (SupplierInfoIdentity) returns (ExtendedSupplierInfoEntity);
+  rpc GetExtendedSupplierInfos (stream SupplierInfoIdentity) returns (stream ExtendedSupplierInfoEntity);
+
+  rpc SetExtendedSupplierInfos(stream ExtendedSupplierInfoEntity) returns (base_replies.CountEntity);
+}
+
+message SupplierInfoIdentity {
+  sint32 id = 1;
+}
+
+message SupplierInfoEntity {
+  sint32 id = 1;
+  string name = 2;
+}
+
+message ExtendedSupplierInfoEntity {
+  sint32 id = 1;
+  string name = 2;
+  cities.CityInfoEntity city_info = 3;
+}

@@ -73,6 +73,166 @@
           <e p="AssemblyInfo.cs" t="Include" />
         </e>
       </e>
+      <e p="gRpc" t="Include" />
+      <e p="gRpcClientTest" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="gRpcClientTest.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="gRpcClientTest.AssemblyInfo.cs" t="Include" />
+              <e p="Protos" t="Include">
+                <e p="customers.cs" t="Include" />
+                <e p="CustomersGrpc.cs" t="Include" />
+                <e p="Greet.cs" t="Include" />
+                <e p="GreetGrpc.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Protos" t="Include">
+          <e p="customers.proto" t="Include" />
+          <e p="greet.proto" t="Include" />
+        </e>
+      </e>
+      <e p="gRpcLinq2dbServer" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="DataSource" t="Include">
+          <e p="Connection" t="Include">
+            <e p="ConnectionSettings.cs" t="Include" />
+            <e p="DataBaseConnection.cs" t="Include" />
+          </e>
+          <e p="Models" t="Include">
+            <e p="Category.cs" t="Include" />
+            <e p="City.cs" t="Include" />
+            <e p="Employee.cs" t="Include" />
+            <e p="Product.cs" t="Include" />
+            <e p="ProductsSuppliers.cs" t="Include" />
+            <e p="Supplier.cs" t="Include" />
+          </e>
+        </e>
+        <e p="gRpcLinq2dbServer.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="BaseReplies.cs" t="Include" />
+              <e p="BaseRepliesGrpc.cs" t="Include" />
+              <e p="gRpcLinq2dbServer.AssemblyInfo.cs" t="Include" />
+              <e p="ProductSpace" t="Include">
+                <e p="Categories.cs" t="Include" />
+                <e p="CategoriesGrpc.cs" t="Include" />
+                <e p="Cities.cs" t="Include" />
+                <e p="CitiesGrpc.cs" t="Include" />
+                <e p="MapProductSupplier.cs" t="Include" />
+                <e p="MapProductSupplierGrpc.cs" t="Include" />
+                <e p="Products.cs" t="Include" />
+                <e p="ProductsGrpc.cs" t="Include" />
+                <e p="Suppliers.cs" t="Include" />
+                <e p="SuppliersGrpc.cs" t="Include" />
+              </e>
+              <e p="Protos" t="Include">
+                <e p="Greet.cs" t="Include" />
+                <e p="GreetGrpc.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Protos" t="Include">
+          <e p="base_replies.proto" t="Include" />
+          <e p="greet.proto" t="Include" />
+          <e p="ProductSpace" t="Include">
+            <e p="categories.proto" t="Include" />
+            <e p="cities.proto" t="Include" />
+            <e p="map_product_supplier.proto" t="Include" />
+            <e p="products.proto" t="Include" />
+            <e p="suppliers.proto" t="Include" />
+          </e>
+        </e>
+        <e p="Services" t="Include">
+          <e p="GreeterService.cs" t="Include" />
+          <e p="ProductSpace" t="Include">
+            <e p="ProductService.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Startup.cs" t="Include" />
+      </e>
+      <e p="gRpcServerTest" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="gRpcServerTest.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="customers.cs" t="Include" />
+              <e p="CustomersGrpc.cs" t="Include" />
+              <e p="Greet.cs" t="Include" />
+              <e p="GreetGrpc.cs" t="Include" />
+              <e p="gRpcServerTest.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Protos" t="Include">
+          <e p="customers.proto" t="Include" />
+          <e p="greet.proto" t="Include" />
+        </e>
+        <e p="Services" t="Include">
+          <e p="CustomersService.cs" t="Include" />
+          <e p="GreeterService.cs" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+      </e>
+      <e p="gRpcWithLinq2db" t="Include" />
+      <e p="gRpcWithLinq2dbClient" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="gRpcWithLinq2dbClient.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="BaseReplies.cs" t="Include" />
+              <e p="BaseRepliesGrpc.cs" t="Include" />
+              <e p="gRpcWithLinq2dbClient.AssemblyInfo.cs" t="Include" />
+              <e p="ProductSpace" t="Include">
+                <e p="Categories.cs" t="Include" />
+                <e p="CategoriesGrpc.cs" t="Include" />
+                <e p="Cities.cs" t="Include" />
+                <e p="CitiesGrpc.cs" t="Include" />
+                <e p="MapProductSupplier.cs" t="Include" />
+                <e p="MapProductSupplierGrpc.cs" t="Include" />
+                <e p="Products.cs" t="Include" />
+                <e p="ProductsGrpc.cs" t="Include" />
+                <e p="Suppliers.cs" t="Include" />
+                <e p="SuppliersGrpc.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Protos" t="Include">
+          <e p="base_replies.proto" t="Include" />
+          <e p="ProductSpace" t="Include">
+            <e p="categories.proto" t="Include" />
+            <e p="cities.proto" t="Include" />
+            <e p="map_product_supplier.proto" t="Include" />
+            <e p="products.proto" t="Include" />
+            <e p="suppliers.proto" t="Include" />
+          </e>
+        </e>
+        <e p="ServiceControllers" t="Include">
+          <e p="ProductController.cs" t="Include" />
+        </e>
+      </e>
       <e p="Linq2db" t="Include" />
       <e p="Linq2DbTest" t="IncludeRecursive">
         <e p="app.config" t="Include" />
